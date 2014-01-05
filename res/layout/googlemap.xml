@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<com.lity.android.apis.map.SearchMapView 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:id="@+id/mapView"  
+		android:enabled="true" 
+		android:clickable="true"
+		android:focusable="true"
+		android:focusableInTouchMode="true" 
+		android:apiKey = "0tDUlHUhJoFJj97KL-1cxuw0cgyrIrm6mdQDx6g"
+		/>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:visibility="gone" 
+		
+		android:text="map map go" />
+</RelativeLayout>

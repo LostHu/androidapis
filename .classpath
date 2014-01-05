@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="com/emapgo/litl/GoogleMap.java|com/emapgo/controls/GoogleMap.java|com/lity/hlistview/CopyOfHorizontialListView.java|com/lity/android/apis/listview/Copy_2_of_HorizontalListView.java|com/lity/android/apis/chess/views/ChessBoard.java|com/lity/android/apis/chess/views/Chessman.java|com/lity/android/apis/chess/ChessWindow.java|com/lity/android/apis/chess/views/Car.java|com/lity/android/apis/chess/views/Elephant.java|com/lity/android/apis/chess/views/General.java|com/lity/android/apis/chess/views/Gun.java|com/lity/android/apis/chess/views/Horse.java|com/lity/android/apis/chess/views/Soldier.java|com/lity/android/apis/chess/views/Who.java|com/lity/android/apis/listview/CopyOfHorizontalListView.java|com/lity/android/apis/listview/HorizontalListView2.java|com/lity/android/apis/listview/HorizontalListView3.java|com/lity/android/apis/map/" kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

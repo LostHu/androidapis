@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<object-array name="object-test">
+	<object>
+		<name>李同垒</name>
+		<age>20</age>
+		<address>上海市虹口区</address>
+	</object>
+	<object>
+		<name>visiable</name>
+		<age>22</age>
+		<address>上海市闸北区</address>
+	</object>
+</object-array>
