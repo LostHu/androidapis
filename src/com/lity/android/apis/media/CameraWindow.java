@@ -12,6 +12,7 @@ import android.graphics.Matrix;
 import android.graphics.PixelFormat;
 import android.graphics.Bitmap.CompressFormat;
 import android.hardware.Camera;
+import android.hardware.Camera.PictureCallback;
 import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.os.Handler;
@@ -183,42 +184,42 @@ public class CameraWindow extends Activity {
         @Override
         public void onClick(View v) {
             if (null != mCamera) {
-                mCamera.takePicture(this, null, this);
+                mCamera.takePicture(this, this, this);
             }
         }
 
         @Override
         public void onShutter() {
-            Log.v(DEBUG, "on shutter method");
-            mCamera.startPreview();
+//            Log.v(DEBUG, "on shutter method");
+//            mCamera.startPreview();
         }
 
         @Override
         public void onPictureTaken(byte[] data, Camera camera) {
             Log.v(DEBUG, "data :" + data);
             Log.v(DEBUG, "thread:" + Thread.currentThread());
-            if (null != data) {
-                Log.v(DEBUG, "write compress data to jpg file");
-                Bitmap cameraBitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
-                Matrix matrix = new Matrix();
-                matrix.postRotate(90);
-                cameraBitmap = Bitmap.createBitmap(cameraBitmap, 0, 0, cameraBitmap.getWidth(), cameraBitmap.getHeight(), matrix, true);
-                if (null != cameraBitmap) {
-                    Log.v(DEBUG, "camera == " + cameraBitmap);
-                    mImageOrVideoImageView.setImageBitmap(cameraBitmap);
-                }
-                File saveFile = new File("/sdcard/record/" + System.currentTimeMillis() + ".jpg");
-                BufferedOutputStream bs = null;
-                try {
-                    bs = new BufferedOutputStream(new FileOutputStream(saveFile));
-                    cameraBitmap.compress(CompressFormat.JPEG, 80, bs);
-                    bs.flush();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    Log.v(DEBUG, "an Exception occurs :" + e);
-                }
-
-            }
+//            if (null != data) {
+//                Log.v(DEBUG, "write compress data to jpg file");
+//                Bitmap cameraBitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
+//                Matrix matrix = new Matrix();
+//                matrix.postRotate(90);
+//                cameraBitmap = Bitmap.createBitmap(cameraBitmap, 0, 0, cameraBitmap.getWidth(), cameraBitmap.getHeight(), matrix, true);
+//                if (null != cameraBitmap) {
+//                    Log.v(DEBUG, "camera == " + cameraBitmap);
+//                    mImageOrVideoImageView.setImageBitmap(cameraBitmap);
+//                }
+//                File saveFile = new File("/sdcard/record/" + System.currentTimeMillis() + ".jpg");
+//                BufferedOutputStream bs = null;
+//                try {
+//                    bs = new BufferedOutputStream(new FileOutputStream(saveFile));
+//                    cameraBitmap.compress(CompressFormat.JPEG, 80, bs);
+//                    bs.flush();
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                    Log.v(DEBUG, "an Exception occurs :" + e);
+//                }
+//
+//            }
         }
         
     }
@@ -283,7 +284,7 @@ public class CameraWindow extends Activity {
                     e.printStackTrace();
                     Log.v(DEBUG, "exception occurs: " + e);
                 }
-                mCamera.unlock();
+//                mCamera.unlock();
                 mHandler.sendEmptyMessage(ININ_RECORDER);
                 Log.v(DEBUG, "surfaceChanged mehthod");
             }
@@ -321,11 +322,13 @@ public class CameraWindow extends Activity {
      */
     private void startPreview(){
         mCamera = Camera.open();
-        mCamera.lock();
+//        mCamera.lock();
+//        mCamera.l
         Camera.Parameters parameters = mCamera.getParameters();
         parameters.setPictureFormat(PixelFormat.JPEG);
+        parameters.setFlashMode(Camera.Parameters.FLASH_MODE_ON);
         mCamera.setParameters(parameters);
-//        mCamera.setDisplayOrientation(90);
+        mCamera.setDisplayOrientation(90);
         try {
             Log.v(DEBUG, "holder: " + mSurfaceHolder);
             mCamera.setPreviewDisplay(mSurfaceHolder);
@@ -342,31 +345,31 @@ public class CameraWindow extends Activity {
      * @param toRecord true时录制,false时预览
      */
     private void initRecorder(boolean toRecord){
-        mMediaRecorder = new MediaRecorder();
-        
-        mMediaRecorder.setCamera(mCamera);
-        
-        // NOTICE 这些设置必须在setCamera()后面
-        mMediaRecorder.setVideoSource(MediaRecorder.VideoSource.CAMERA);
-        mMediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-        mMediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-        mMediaRecorder.setVideoSize(100, 100);
-        mMediaRecorder.setVideoFrameRate(15);
-        mMediaRecorder.setVideoEncoder(MediaRecorder.VideoEncoder.H263);
-        mMediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
-        if (toRecord) {
-            mMediaRecorder.setOutputFile("/cache/record/" + System.currentTimeMillis() + ".3gp");  
-        }
-        else {
-            mMediaRecorder.setOutputFile("/dev/null"); 
-        }
-        mMediaRecorder.setPreviewDisplay(mSurfaceHolder.getSurface());
-        try {
-            mMediaRecorder.prepare();
-        } catch (Exception e) {
-            e.printStackTrace();
-            Log.v(DEBUG, "exception occurs: " + e);
-        } 
+//        mMediaRecorder = new MediaRecorder();
+//        
+//        mMediaRecorder.setCamera(mCamera);
+//        
+//        // NOTICE 这些设置必须在setCamera()后面
+//        mMediaRecorder.setVideoSource(MediaRecorder.VideoSource.CAMERA);
+//        mMediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+//        mMediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+//        mMediaRecorder.setVideoSize(100, 100);
+//        mMediaRecorder.setVideoFrameRate(15);
+//        mMediaRecorder.setVideoEncoder(MediaRecorder.VideoEncoder.H263);
+//        mMediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+//        if (toRecord) {
+//            mMediaRecorder.setOutputFile("/cache/record/" + System.currentTimeMillis() + ".3gp");  
+//        }
+//        else {
+//            mMediaRecorder.setOutputFile("/dev/null"); 
+//        }
+//        mMediaRecorder.setPreviewDisplay(mSurfaceHolder.getSurface());
+//        try {
+//            mMediaRecorder.prepare();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            Log.v(DEBUG, "exception occurs: " + e);
+//        } 
     }
     
     /**
@@ -374,23 +377,23 @@ public class CameraWindow extends Activity {
      * @param pattern 模式Id
      */
     private void switchPattern(int pattern){
-        if (mPattern != pattern) {
-            if (PATTERN_TAKEPICTURE == pattern) {
-                mMediaRecorder.stop();
+//        if (mPattern != pattern) {
+//            if (PATTERN_TAKEPICTURE == pattern) {
+//                mMediaRecorder.stop();
 //                try {
 //                    mCamera.reconnect();
 //                } catch (IOException e) {
 //                    e.printStackTrace();
 //                    Log.v(DEBUG, "exception occurs: " + e);
 //                }
-                mCamera.startPreview();
-            }
-            else if (PATTERN_RECORDVIDEO == pattern) {
-                
+//                mCamera.startPreview();
+//            }
+//            else if (PATTERN_RECORDVIDEO == pattern) {
+//                
 //                mMediaRecorder.start();
-            }
-            mPattern = pattern;
-        }
+//            }
+//            mPattern = pattern;
+//        }
     }
    
 }
