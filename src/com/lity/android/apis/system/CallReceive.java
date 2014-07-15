@@ -56,7 +56,8 @@ public class CallReceive extends BroadcastReceiver {
 					if (null != telephony) {
 						Log.v("DEBUG", "will abort call");
 				         IBinder binder = ServiceManager.getService(Service.TELEPHONY_SERVICE);
-						 ITelephony telephony2 = ITelephony.Stub.asInterface(binder);
+//						 ITelephony telephony2 = ITelephony.Stub.asInterface(binder);
+				         ITelephony telephony2 = null;
 				         telephony2.endCall();
 					} else {
 						Log.v("DEBUG", "have income call, but have not find ITelephony");

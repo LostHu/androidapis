@@ -11,6 +11,8 @@ public class GameScene extends Scene {
         background = new FixedBackground(Textures.background);
         setBackground(background);
         
+//        setBackground(background)
+        
 		setWorld(new World(new Vector2(0, 6), false));
 //		world.setContactListener(contactListener = new MyContactListener());
     }

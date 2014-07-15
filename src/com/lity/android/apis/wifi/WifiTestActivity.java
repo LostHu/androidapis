@@ -1,24 +1,9 @@
 package com.lity.android.apis.wifi;
 
-import com.android.internal.telephony.ITelephony;
 
 import android.app.Activity;
-import android.app.Service;
-import android.content.Context;
-import android.database.ContentObservable;
-import android.database.ContentObserver;
-import android.net.Uri;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.IBinder;
-import android.os.RemoteException;
-import android.os.ServiceManager;
-import android.provider.ContactsContract;
-import android.telephony.PhoneStateListener;
-import android.telephony.TelephonyManager;
-import android.util.Log;
-import android.widget.Toast;
 
 /*
  * 获取wifi流量,仅2.2以上可用
