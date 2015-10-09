@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#FF00FF00" >
+	<ImageView
+		android:id="@+id/hlistview_listitem_imageview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:src="@drawable/display_coupon_bg" />
+	<TextView
+		android:id="@+id/hlistview_listitem_textview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#FF0000FF"
+		android:layout_below="@id/hlistview_listitem_imageview" />
+</RelativeLayout>
+<!-- From: file:/D:/projects/AndroidApis/app/src/main/res/layout/hlistview_listitem.xml -->

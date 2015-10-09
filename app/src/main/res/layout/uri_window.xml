@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- http:// 链接 -->
+	<TextView 
+	    android:id="@+id/uri_httplink_1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:autoLink="all"
+	    android:text="http://market.android.com/search?q=pname:com.nduoa.nmarket"/>
+	
+	<TextView 
+	    android:id="@+id/uri_httplink_2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:autoLink="all"
+	    android:text="http://market.android.com/search?q=pub:google"/>
+	
+	<TextView 
+	    android:id="@+id/uri_httplink_3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:autoLink="all"
+	    android:text="http://market.android.com/search?q=voice"/>
+	
+	<TextView 
+	    android:id="@+id/uri_httplink_4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:autoLink="all"
+	    android:text="http://market.android.com/details?id=com.tencent.mm"/>
+	
+		<TextView 
+	    android:id="@+id/uri_httplink_1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:autoLink="all"
+	    android:text="http://market.android.com/search?q=pname:com.nduoa.nmarket"/>
+	
+	<TextView 
+	    android:id="@+id/uri_httplink_2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:autoLink="all"
+	    android:text="http://market.android.com/search?q=pub:google"/>
+	
+	<!-- http error link -->
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:autoLink="all"
+	    android:text="http://market.android.com/search?q=pname:com.error"/>
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:autoLink="all"
+	    android:text="http://market.android.com/search?q=pub:error"/>
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:autoLink="all"
+	    android:text="http://market.android.com/search?q=error_voice"/>
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:autoLink="all"
+	    android:text="http://market.android.com/details?id= air.GoldEgg"/>
+	
+	
+	<!-- market:// 链接 -->
+	<Button 
+	    android:id="@+id/uri_marketlink_1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:autoLink="all"
+	    android:text="market://search?q=pname:com.nduoa.nmarket"/>
+	
+	<Button 
+	    android:id="@+id/uri_marketlink_2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:autoLink="all"
+	    android:text="market://search?q=pub:google"/>
+	
+	<Button 
+	    android:id="@+id/uri_marketlink_3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:autoLink="all"
+	    android:text="market://search?q=voice"/>
+	
+	<Button 
+	    android:id="@+id/uri_marketlink_4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:autoLink="all"
+	    android:text="market://details?id= air.GoldEgg"/>
+
+	<!-- market:// 链接 -->
+	<Button
+		android:id="@+id/uri_marketlink_serializable"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Serializable"/>
+</LinearLayout>

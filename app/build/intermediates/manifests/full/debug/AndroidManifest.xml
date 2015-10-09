@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lity.android.apis"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!-- 读取联系人 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <!-- 读取短信息 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_RIDEO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 使用蓝牙所需要的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 使用wifi所需要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_CHCHECKIN_PROPERTIES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+
+    <!-- 开启GPS所需要的权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 录制所需要的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- google map -->
+    <uses-permission
+        android:name="android.permission.WRITE_GSERVICES"
+        android:required="false" />
+
+    <!-- location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 通话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="com.lity.android.apis.App"
+        android:icon="@drawable/myspace"
+        android:label="@string/app_name" >
+
+        <!-- 使用google maps 类库 -->
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false" />
+
+        <!-- main listview activity -->
+        <activity
+            android:name="com.lity.android.apis.MainListWindow"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- .tabs package -->
+        <activity
+            android:name="com.lity.android.apis.tabs.Tab1"
+            android:label="/tabs/Tab1" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.tabs.Tab2"
+            android:label="/tabs/Tab2" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.tabs.MainTab"
+            android:label="/tabs/MainTab" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.tabs.TabOne"
+            android:label="/tabs/MainTab" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.tabs.TabTwo"
+            android:label="/tabs/MainTab" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .media package -->
+        <activity
+            android:name="com.lity.android.apis.media.AudioActivity"
+            android:label="/media/AudioActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.media.VedioWindow"
+            android:label="/media/VedioWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.media.CameraWindow"
+            android:label="/media/CameraWindow"
+            android:screenOrientation="unspecified"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .listview package -->
+        <activity
+            android:name="com.lity.android.apis.listview.HListViewWindow"
+            android:label="/listview/HListViewWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.listview.HorizontalListViewWindow"
+            android:label="/listview/HorizontalListViewWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.listview.TextViewWindow"
+            android:label="/listview/TextViewWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.listview.AutoScrollWindow"
+            android:label="/listview/AutoScrollWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .window package -->
+        <activity
+            android:name="com.lity.android.apis.window.ListViewWindow"
+            android:label="/window/ListViewWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .linearlayout package -->
+        <activity
+            android:name="com.lity.android.apis.linearlayout.LinearLayoutTestWindow"
+            android:label="/linearlayout/LinearLayoutTestWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .animation package -->
+        <activity
+            android:name="com.lity.android.apis.animation.AnimationWindow"
+            android:label="/animation/AnimationWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .sms package -->
+        <activity
+            android:name="com.lity.android.apis.sms.MmsActivity"
+            android:label="/sms/MmsActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .wifi package -->
+        <activity
+            android:name="com.lity.android.apis.wifi.WifiTestActivity"
+            android:label="/wifi/WifiTestActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .system package -->
+        <activity
+            android:name="com.lity.android.apis.system.SystemListenerActivity"
+            android:label="/system/SystemListenerActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.system.SmsPopActivity"
+            android:label="/system/SmsPopActivity"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.lity.android.apis.system.SmsPopReceive" >
+
+            <!-- 接收短消息 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL" />
+                <action android:name="android.intent.action.MEDIA_CHECKING" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_NOFS" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED" />
+                <action android:name="android.intent.action.MEDIA_SCANNER_SCAN_FILE" />
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED" />
+                <action android:name="android.intent.action.MEDIA_SHARED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTABLE" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.lity.android.apis.system.CallReceive"
+            android:enabled="false" >
+
+            <!-- 接收来电 -->
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- .draw package -->
+        <activity
+            android:name="com.lity.android.apis.draw.View3DWindow"
+            android:label="/draw/View3DWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.draw.ViewDrawWindow"
+            android:label="/draw/ViewDrawWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.draw.RoundActivity"
+            android:label="/draw/RoundActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.draw.GraphicBitmap"
+            android:label="/draw/GraphicBitmap" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .game3d package -->
+        <activity
+            android:name="com.lity.android.apis.game3d.TriangleWindow"
+            android:label="/game3d/TriangleWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .grayview package -->
+        <activity
+            android:name="com.lity.android.apis.grayview.GrayViewWindow"
+            android:label="/grayview/GrayViewWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .notification package -->
+        <activity
+            android:name="com.lity.android.apis.notification.NotificationWindow1"
+            android:label="/notification/NotificationWindow1" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.notification.NotificationWindow2"
+            android:label="/notification/NotificationWindow2" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .textview package -->
+        <activity
+            android:name="com.lity.android.apis.textview.ChineseWindow"
+            android:label="/textview/ChineseWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .progressdialog package -->
+        <activity
+            android:name="com.lity.android.apis.progressdialog.ProgressDialogWindow"
+            android:label="/progressdialog/ProgressDialogWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.dialog.MyAlertDialogWindow"
+            android:label="/dialog/MyAlertDialogWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .contract package -->
+        <activity
+            android:name="com.lity.android.apis.contract.ContactManagerWindow"
+            android:label="/contract/ContractManagerWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.contract.ViewContractActivity"
+            android:label="/contract/ViewContractActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .webview package -->
+        <activity
+            android:name="com.lity.android.apis.webview.WebListWindow"
+            android:label="/webview/WebListWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .jni package -->
+        <activity
+            android:name="com.lity.android.apis.jni.JniTestWindow"
+            android:label="/jni/JniTestWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .jarload package -->
+        <activity
+            android:name="com.lity.android.apis.jarload.JarLoadWindow"
+            android:label="/jarload/JniLoadWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .location package -->
+        <activity
+            android:name="com.lity.android.apis.location.LocationTestWindow"
+            android:label="/location/LocationTestWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.webview.DetailWindow"
+            android:label="/webview/DetailWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .chess package -->
+        <activity
+            android:name="com.lity.android.apis.chess.ChessWindow"
+            android:label="/chess/ChessWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .adapter package -->
+        <activity
+            android:name="com.lity.android.apis.adapter.ListWindow"
+            android:label="/adapter/ListWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .bluetooth package -->
+        <activity
+            android:name="com.lity.android.apis.bluetooth.BluetoothWindow"
+            android:label="/blue/BluetoothWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .controls package -->
+        <activity
+            android:name="com.lity.android.apis.controls.ImageButtonWindow"
+            android:label="/controls/ImageButtonWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.controls.PopupViewWindow"
+            android:label="/controls/PopupViewWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.controls.RadioGroupWindow"
+            android:label="/controls/RadioGroup" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.controls.FocusWindow"
+            android:label="/controls/FocusWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.controls.ImageViewWindow"
+            android:label="/controls/ImageView" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.controls.Main"
+            android:label="/controls/Main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.controls.LocationWindow"
+            android:label="/controls/Location" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lity.android.apis.GenericListActivity" >
+        </activity>
+
+        <!-- .overlay package -->
+        <activity
+            android:name="com.lity.android.apis.overlay.OverlayWindow"
+            android:label="/overlay/OverlayWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .exgridview package -->
+        <activity
+            android:name="com.lity.android.apis.exgridview.ExTestWindow"
+            android:label="/exgridview/ExTestWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .display package -->
+        <activity
+            android:name="com.lity.android.apis.display.DisplayMetricsActivity"
+            android:label="/display/DisplayMetricsActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .rokon package -->
+        <activity
+            android:name="com.lity.android.apis.rokon.AppleWindow"
+            android:label="/rokon/AppleWindow"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .net package -->
+        <activity
+            android:name="com.lity.android.apis.net.HttpUrlWindow"
+            android:label="/net/HttpUrl" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.net.SocketWindow"
+            android:label="/net/Socket" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .map package -->
+        <activity
+            android:name="com.lity.android.apis.map.MapWindow"
+            android:label="/map/MapWindow"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/map_searchable" />
+        </activity>
+
+        <!-- .service package -->
+        <activity
+            android:name="com.lity.android.apis.service.ExitWindow"
+            android:label="/service/ExitWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .xml package -->
+        <activity
+            android:name="com.lity.android.apis.xml.ObjectsFromXmlWindow"
+            android:label="/xml/ObjectsFromXmlWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .projstory package -->
+        <activity
+            android:name="com.lity.android.apis.projstory.ReadWindow"
+            android:label="/projstory/ReadWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .sqlite package -->
+        <activity
+            android:name="com.lity.android.apis.sqlite.SqliteWindow"
+            android:label="/sqlite/SqliteWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .transformation package -->
+        <activity
+            android:name="com.lity.android.apis.transformation.Matrix1"
+            android:label="/transformation/Matrix1" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .sdcard package -->
+        <activity
+            android:name="com.lity.android.apis.sdcard.SdcardReadWindow"
+            android:label="/sdcard/SdcardReadWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.sdcard.Md5SameWindow"
+            android:label="/sdcard/Md5SameWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .sdcard package -->
+        <activity
+            android:name="com.lity.android.apis.uri.UriWindow"
+            android:label="/uri/UriWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .sdcard package -->
+        <activity
+            android:name="com.lity.android.apis.file.RenameWindow"
+            android:label="/file/RenameWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .sdcard package -->
+        <activity
+            android:name="com.lity.android.apis.pm.InstallPackageWindow"
+            android:label="/pm/InstallPackageWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- .multitouch package -->
+        <activity
+            android:name="com.lity.android.apis.multitouch.MultiTouchWindow"
+            android:label="/mutitouch/MultiTouchWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 搜索历史记录 -->
+        <!-- <provider android:name=".map.SearchSuggestionProvider" android:authorities="com.lity.android.apis.map.SearchSuggestionProvider" /> -->
+
+
+        <!-- 广播,接收短消息 -->
+        <receiver
+            android:name="com.lity.android.apis.sms.SmsReceive"
+            android:enabled="false" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 广播,接收开机启动消息 -->
+        <receiver
+            android:name="com.lity.android.apis.service.BootReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.lity.android.apis.service.ServerService" />
+
+        <!-- .aidl package -->
+        <service android:name="com.lity.android.apis.aidl.RemoteService" >
+            <intent-filter>
+                <action android:name="com.lity.android.aidl.service" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.lity.android.apis.aidl.ClientActivity"
+            android:label="/aidl/ClientActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lity.android.apis.aidl.ConnectNduoaActivity"
+            android:label="/aidl/ConnectNduoaActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="CATEGORY_LITY_SAMPLE" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 每个窗口都可以搜索,用这句 -->
+<!-- 		<meta-data android:name="android.app.default_searchable" android:value="MapWindow" ></meta-data> -->
+    </application>
+
+</manifest>

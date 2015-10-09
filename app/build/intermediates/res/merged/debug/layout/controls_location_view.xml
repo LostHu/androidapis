@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lity.android.apis.controls.LocationView
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  android:layout_width="fill_parent" 
+  android:layout_height="fill_parent" 
+  android:background="@drawable/controls_location_show"
+  android:orientation="horizontal" >
+	<ImageButton
+		android:id="@+id/locationview_left_imageButton"
+		android:layout_width="25dp"
+		android:layout_height="fill_parent" 
+		android:background="#00000000" />
+	<TextView
+		android:id="@+id/locationview_mid_textview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:layout_weight="1" />
+	<ImageButton
+		android:id="@+id/locationview_right_imageButton"
+		android:layout_width="25dp"
+		android:layout_height="fill_parent"
+		android:background="#00000000" />
+</com.lity.android.apis.controls.LocationView>
+<!-- From: file:/D:/projects/AndroidApis/app/src/main/res/layout/controls_location_view.xml -->

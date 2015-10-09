@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:paddingBottom="3dp" >
+	<Button
+		android:id="@+id/display_listitem_title_button"
+		android:layout_width="109dp"
+		android:layout_height="30dp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:paddingLeft="3dp"
+		android:paddingRight="6dp"
+		android:background="#00FF00"
+		android:singleLine="true"
+		android:gravity="center_horizontal"
+		android:ellipsize="marquee"
+		android:text="loading" />
+ 	<HorizontalScrollView 
+ 		android:id="@+id/display_listitem_hscrollview"
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="108dp" 
+ 		android:layout_below="@id/display_listitem_title_button"
+ 		android:layout_marginTop="5dp"
+ 		android:layout_marginLeft="2dp"
+ 		android:fadingEdge="none"
+ 		android:scrollbars="none" >
+ 		<LinearLayout
+ 			android:id="@+id/display_listitem_linearlayout" 
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="fill_parent" 
+ 			android:orientation="horizontal" >
+ 		</LinearLayout>
+ 	</HorizontalScrollView>
+ 	<ImageView
+ 		android:id="@+id/display_listitem_light_imageview"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+ 		android:visibility="invisible"
+ 		android:scaleType="fitXY"
+ 		android:layout_alignParentTop="true"
+ 		android:layout_alignParentLeft="true" />
+</RelativeLayout>

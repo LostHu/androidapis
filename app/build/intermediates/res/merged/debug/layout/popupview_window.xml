@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+	<Button
+		android:id="@+id/popupview_menu_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="菜单" />
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="菜单1" />
+</LinearLayout>
+<!-- From: file:/D:/projects/AndroidApis/app/src/main/res/layout/popupview_window.xml -->

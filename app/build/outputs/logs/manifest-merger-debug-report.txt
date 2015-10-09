@@ -1,0 +1,723 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:2:1-787:12
+	package
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:3:7-38
+		INJECTED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml
+		INJECTED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:5:7-32
+	android:versionCode
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:4:7-30
+		INJECTED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml
+		INJECTED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:6:5-8:41
+	android:targetSdkVersion
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:8:9-38
+		INJECTED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml
+		INJECTED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:7:9-34
+		INJECTED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml
+		INJECTED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:10:2-78
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:10:19-75
+uses-permission#android.permission.INTERNET
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:11:2-63
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:11:19-61
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:12:2-76
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:12:19-73
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:13:2-83
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:13:19-64
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:16:2-85
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:16:19-66
+uses-permission#android.permission.WRITE_CONTACTS
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:17:2-86
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:17:19-67
+uses-permission#android.permission.READ_SMS
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:21:2-80
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:21:19-61
+uses-permission#android.permission.WRITE_SMS
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:22:2-81
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:22:19-62
+uses-permission#android.permission.CAMERA
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:24:2-78
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:24:19-59
+uses-feature#android.hardware.camera
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:25:2-57
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:25:16-54
+uses-feature#android.hardware.camera.autofocus
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:26:2-92
+	android:required
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:26:65-89
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:26:16-64
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:27:2-84
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:27:19-65
+uses-permission#android.permission.RECORD_RIDEO
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:28:2-84
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:28:19-65
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:29:2-94
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:29:19-75
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:32:2-82
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:32:19-62
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:33:2-88
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:33:19-68
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:36:2-90
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:36:19-70
+uses-permission#android.permission.ACCESS_CHCHECKIN_PROPERTIES
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:37:2-100
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:37:19-80
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:38:2-82
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:38:19-62
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:40:2-90
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:40:19-70
+uses-permission#android.permission.MODIFY_PHONE_STATE
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:41:2-91
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:41:19-71
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:44:2-70
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:44:19-67
+uses-permission#android.permission.WRITE_SECURE_SETTINGS
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:45:5-80
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:45:22-77
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:46:5-79
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:46:22-76
+uses-permission#android.permission.WRITE_GSERVICES
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:53:2-112
+	android:required
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:53:69-93
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:53:19-68
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:56:2-78
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:56:19-75
+uses-permission#android.permission.CALL_PHONE
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:60:2-66
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:60:19-63
+application
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:62:5-785:19
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:63:40-72
+	android:icon
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:63:7-39
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:62:18-37
+uses-library#com.google.android.maps
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:66:6-100
+	android:required
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:66:59-83
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:66:20-58
+activity#com.lity.android.apis.MainListWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:69:9-75:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:70:19-51
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:69:19-49
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:71:10-74:20
+action#android.intent.action.MAIN
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:72:8-60
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:72:16-57
+category#android.intent.category.LAUNCHER
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:73:8-68
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:73:18-65
+activity#com.lity.android.apis.tabs.Tab1
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:78:3-85:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:79:4-30
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:78:13-40
+intent-filter#CATEGORY_LITY_SAMPLE+android.intent.action.MAIN+android.intent.category.SAMPLE_CODE
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:80:4-84:20
+category#CATEGORY_LITY_SAMPLE
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:82:5-53
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:82:15-50
+category#android.intent.category.SAMPLE_CODE
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:83:5-68
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:83:15-65
+activity#com.lity.android.apis.tabs.Tab2
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:87:3-94:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:88:4-30
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:87:13-40
+activity#com.lity.android.apis.tabs.MainTab
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:96:3-103:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:97:4-33
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:96:13-43
+activity#com.lity.android.apis.tabs.TabOne
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:104:3-111:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:105:4-33
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:104:13-42
+activity#com.lity.android.apis.tabs.TabTwo
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:112:3-119:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:113:4-33
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:112:13-42
+activity#com.lity.android.apis.media.AudioActivity
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:122:3-129:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:123:4-40
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:122:13-49
+activity#com.lity.android.apis.media.VedioWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:131:9-139:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:133:10-44
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:132:10-43
+activity#com.lity.android.apis.media.CameraWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:140:9-149:20
+	android:screenOrientation
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:143:10-49
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:141:10-45
+	android:theme
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:142:10-57
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:140:19-53
+activity#com.lity.android.apis.listview.HListViewWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:153:9-160:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:154:10-51
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:153:19-59
+activity#com.lity.android.apis.listview.HorizontalListViewWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:162:9-169:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:163:10-60
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:162:19-68
+activity#com.lity.android.apis.listview.TextViewWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:171:9-178:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:172:10-50
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:171:19-58
+activity#com.lity.android.apis.listview.AutoScrollWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:180:9-187:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:181:10-52
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:180:19-60
+activity#com.lity.android.apis.window.ListViewWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:190:9-197:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:191:10-48
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:190:19-56
+activity#com.lity.android.apis.linearlayout.LinearLayoutTestWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:200:9-207:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:201:10-62
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:200:19-70
+activity#com.lity.android.apis.animation.AnimationWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:210:9-218:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:212:10-52
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:211:10-51
+activity#com.lity.android.apis.sms.MmsActivity
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:221:9-229:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:223:10-42
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:222:10-41
+activity#com.lity.android.apis.wifi.WifiTestActivity
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:232:9-240:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:234:10-48
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:233:10-47
+activity#com.lity.android.apis.system.SystemListenerActivity
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:243:9-251:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:245:10-56
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:244:10-55
+activity#com.lity.android.apis.system.SmsPopActivity
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:252:9-261:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:255:10-48
+	android:theme
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:254:10-53
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:253:10-47
+receiver#com.lity.android.apis.system.SmsPopReceive
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:262:9-280:14
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:262:19-55
+intent-filter#android.intent.action.MEDIA_BAD_REMOVAL+android.intent.action.MEDIA_BUTTON+android.intent.action.MEDIA_CHECKING+android.intent.action.MEDIA_EJECT+android.intent.action.MEDIA_MOUNTED+android.intent.action.MEDIA_NOFS+android.intent.action.MEDIA_REMOVED+android.intent.action.MEDIA_SCANNER_FINISHED+android.intent.action.MEDIA_SCANNER_SCAN_FILE+android.intent.action.MEDIA_SCANNER_STARTED+android.intent.action.MEDIA_SHARED+android.intent.action.MEDIA_UNMOUNTABLE+android.intent.action.MEDIA_UNMOUNTED
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:264:4-279:20
+action#android.intent.action.MEDIA_EJECT
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:265:8-66
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:265:16-64
+action#android.intent.action.MEDIA_BUTTON
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:266:5-64
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:266:13-62
+action#android.intent.action.MEDIA_BAD_REMOVAL
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:267:5-69
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:267:13-67
+action#android.intent.action.MEDIA_CHECKING
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:268:5-66
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:268:13-64
+action#android.intent.action.MEDIA_MOUNTED
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:269:5-65
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:269:13-63
+action#android.intent.action.MEDIA_NOFS
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:270:5-62
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:270:13-60
+action#android.intent.action.MEDIA_REMOVED
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:271:5-65
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:271:13-63
+action#android.intent.action.MEDIA_SCANNER_FINISHED
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:272:5-74
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:272:13-72
+action#android.intent.action.MEDIA_SCANNER_SCAN_FILE
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:273:5-75
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:273:13-73
+action#android.intent.action.MEDIA_SCANNER_STARTED
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:274:5-73
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:274:13-71
+action#android.intent.action.MEDIA_SHARED
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:275:5-64
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:275:13-62
+action#android.intent.action.MEDIA_UNMOUNTABLE
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:276:5-69
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:276:13-67
+action#android.intent.action.MEDIA_UNMOUNTED
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:277:5-67
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:277:13-65
+data
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:278:8-38
+	android:scheme
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:278:14-35
+receiver#com.lity.android.apis.system.CallReceive
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:281:9-286:14
+	android:enabled
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:281:54-77
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:281:19-53
+intent-filter#android.intent.action.PHONE_STATE
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:283:4-285:20
+	android:priority
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:283:19-42
+action#android.intent.action.PHONE_STATE
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:284:5-64
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:284:13-61
+activity#com.lity.android.apis.draw.View3DWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:289:9-297:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:291:10-44
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:290:10-43
+activity#com.lity.android.apis.draw.ViewDrawWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:298:9-306:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:300:10-46
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:299:10-45
+activity#com.lity.android.apis.draw.RoundActivity
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:307:9-315:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:309:10-45
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:308:10-44
+activity#com.lity.android.apis.draw.GraphicBitmap
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:316:9-324:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:318:10-45
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:317:10-44
+activity#com.lity.android.apis.game3d.TriangleWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:327:3-334:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:328:4-42
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:327:13-50
+activity#com.lity.android.apis.grayview.GrayViewWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:337:3-344:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:338:4-44
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:337:13-52
+activity#com.lity.android.apis.notification.NotificationWindow1
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:347:9-354:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:348:10-59
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:347:19-67
+activity#com.lity.android.apis.notification.NotificationWindow2
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:355:9-362:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:356:10-59
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:355:19-67
+activity#com.lity.android.apis.textview.ChineseWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:365:9-372:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:366:10-49
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:365:19-57
+activity#com.lity.android.apis.progressdialog.ProgressDialogWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:375:9-382:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:376:10-62
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:375:19-70
+activity#com.lity.android.apis.dialog.MyAlertDialogWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:384:3-391:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:385:10-53
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:384:13-55
+activity#com.lity.android.apis.contract.ContactManagerWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:394:9-401:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:395:10-57
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:394:19-64
+activity#com.lity.android.apis.contract.ViewContractActivity
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:402:9-409:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:403:10-56
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:402:19-64
+activity#com.lity.android.apis.webview.WebListWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:412:9-419:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:413:10-48
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:412:19-56
+activity#com.lity.android.apis.jni.JniTestWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:422:9-429:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:423:10-44
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:422:19-52
+activity#com.lity.android.apis.jarload.JarLoadWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:432:9-439:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:433:10-48
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:432:19-56
+activity#com.lity.android.apis.location.LocationTestWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:442:9-449:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:443:10-54
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:442:19-62
+activity#com.lity.android.apis.webview.DetailWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:451:9-458:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:452:10-47
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:451:19-55
+activity#com.lity.android.apis.chess.ChessWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:461:9-468:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:462:10-44
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:461:19-52
+activity#com.lity.android.apis.adapter.ListWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:471:9-478:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:472:10-45
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:471:19-53
+activity#com.lity.android.apis.bluetooth.BluetoothWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:481:9-488:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:482:10-47
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:481:19-60
+activity#com.lity.android.apis.controls.ImageButtonWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:491:9-498:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:492:10-53
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:491:19-61
+activity#com.lity.android.apis.controls.PopupViewWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:500:9-507:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:501:10-51
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:500:19-59
+activity#com.lity.android.apis.controls.RadioGroupWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:509:9-516:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:510:10-46
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:509:19-60
+activity#com.lity.android.apis.controls.FocusWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:518:9-525:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:519:10-47
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:518:19-55
+activity#com.lity.android.apis.controls.ImageViewWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:526:3-533:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:527:4-39
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:526:13-53
+activity#com.lity.android.apis.controls.Main
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:535:9-542:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:536:4-34
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:535:19-48
+activity#com.lity.android.apis.controls.LocationWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:544:9-551:20
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:545:4-38
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:544:19-58
+activity#com.lity.android.apis.GenericListActivity
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:553:9-555:14
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:553:19-55
+activity#com.lity.android.apis.overlay.OverlayWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:558:9-565:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:559:10-48
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:558:19-58
+activity#com.lity.android.apis.exgridview.ExTestWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:568:9-575:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:569:10-50
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:568:19-60
+activity#com.lity.android.apis.display.DisplayMetricsActivity
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:578:9-585:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:579:10-57
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:578:19-67
+activity#com.lity.android.apis.rokon.AppleWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:588:9-596:14
+	android:screenOrientation
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:590:10-47
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:589:10-44
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:588:19-54
+activity#com.lity.android.apis.net.HttpUrlWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:599:9-606:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:600:10-38
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:599:19-54
+activity#com.lity.android.apis.net.SocketWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:608:3-615:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:609:4-31
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:608:13-46
+activity#com.lity.android.apis.map.MapWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:618:9-628:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:619:10-40
+	android:launchMode
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:620:10-40
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:618:19-48
+intent-filter#CATEGORY_LITY_SAMPLE+android.intent.action.MAIN+android.intent.action.SEARCH+android.intent.category.SAMPLE_CODE
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:621:4-626:20
+action#android.intent.action.SEARCH
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:622:5-59
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:622:13-56
+meta-data#android.app.searchable
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:627:4-105
+	android:resource
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:627:53-91
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:627:15-52
+activity#com.lity.android.apis.service.ExitWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:631:9-638:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:632:10-45
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:631:19-55
+activity#com.lity.android.apis.xml.ObjectsFromXmlWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:641:9-648:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:642:10-51
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:641:19-61
+activity#com.lity.android.apis.projstory.ReadWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:651:9-658:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:652:10-47
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:651:19-57
+activity#com.lity.android.apis.sqlite.SqliteWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:661:9-668:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:662:10-46
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:661:19-56
+activity#com.lity.android.apis.transformation.Matrix1
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:671:9-678:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:672:10-49
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:671:19-59
+activity#com.lity.android.apis.sdcard.SdcardReadWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:681:9-688:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:682:10-50
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:681:19-60
+activity#com.lity.android.apis.sdcard.Md5SameWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:690:9-697:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:691:10-47
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:690:19-57
+activity#com.lity.android.apis.uri.UriWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:700:9-707:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:701:10-40
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:700:19-50
+activity#com.lity.android.apis.file.RenameWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:710:9-717:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:711:10-44
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:710:19-54
+activity#com.lity.android.apis.pm.InstallPackageWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:720:9-727:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:721:10-50
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:720:19-60
+activity#com.lity.android.apis.multitouch.MultiTouchWindow
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:730:9-737:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:731:10-53
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:730:19-64
+receiver#com.lity.android.apis.sms.SmsReceive
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:743:3-747:14
+	android:enabled
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:743:44-67
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:743:13-43
+intent-filter#android.provider.Telephony.SMS_RECEIVED
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:744:4-746:20
+	android:priority
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:744:19-42
+action#android.provider.Telephony.SMS_RECEIVED
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:745:5-70
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:745:13-67
+receiver#com.lity.android.apis.service.BootReceiver
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:750:3-754:14
+	android:enabled
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:750:50-72
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:750:13-49
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:751:4-753:20
+	android:priority
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:751:19-42
+action#android.intent.action.BOOT_COMPLETED
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:752:5-67
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:752:13-64
+service#com.lity.android.apis.service.ServerService
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:755:3-61
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:755:12-49
+service#com.lity.android.apis.aidl.RemoteService
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:758:3-762:13
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:758:12-46
+intent-filter#com.lity.android.aidl.service
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:759:10-761:26
+action#com.lity.android.aidl.service
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:760:18-73
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:760:26-70
+activity#com.lity.android.apis.aidl.ClientActivity
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:764:3-771:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:765:10-46
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:764:13-50
+activity#com.lity.android.apis.aidl.ConnectNduoaActivity
+ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:773:3-780:14
+	android:label
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:774:10-52
+	android:name
+		ADDED from D:\projects\AndroidApis\app\src\main\AndroidManifest.xml:773:13-56

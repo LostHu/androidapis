@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+		android:gravity="center_horizontal"
+		android:orientation="vertical" >
+		<com.lity.android.apis.grayview.GrayRelativeLayout
+		  android:layout_width="200dp"
+		  android:layout_height="200dp"
+		  android:background="#00FF00">
+		  <Button
+		  	android:id="@+id/grayview_button1"
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:clickable="false"
+		  	android:text="gray_window" />
+		  <TextView
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:layout_below="@id/grayview_button1"
+		  	android:text="text_View" />
+		</com.lity.android.apis.grayview.GrayRelativeLayout>
+		<com.lity.android.apis.grayview.GrayRelativeLayout
+		  android:layout_width="200dp"
+		  android:layout_height="200dp"
+		  android:background="#00FF00">
+		  <Button
+		  	android:id="@+id/grayview_button2"
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:clickable="false"
+		  	android:text="gray_window" />
+		  <TextView
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:layout_below="@id/grayview_button2"
+		  	android:text="text_View" />
+		</com.lity.android.apis.grayview.GrayRelativeLayout>
+		<com.lity.android.apis.grayview.GrayRelativeLayout
+		  android:layout_width="200dp"
+		  android:layout_height="200dp"
+		  android:background="#00FF00">
+		  <Button
+		  	android:id="@+id/grayview_button3"
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:clickable="false"
+		  	android:text="gray_window" />
+		  <TextView
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:layout_below="@id/grayview_button3"
+		  	android:text="text_View" />
+		</com.lity.android.apis.grayview.GrayRelativeLayout>
+	</LinearLayout>
+</ScrollView>
+<!-- From: file:/D:/projects/AndroidApis/app/src/main/res/layout/grayview_window.xml -->

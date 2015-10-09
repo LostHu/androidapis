@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  	<com.lity.hlistview.HorizontialListView
+  		android:id="@+id/horizontal_listview"
+  		android:layout_width="wrap_content"
+  		android:layout_height="100dp"
+  		android:background="@drawable/display_coupon_bg" />
+  	<LinearLayout
+  		android:id="@+id/horizontal_linearlayout"
+  		android:layout_width="wrap_content"
+  		android:layout_height="fill_parent"
+  		android:orientation="vertical"
+  		android:scrollbars="vertical"
+  		android:background="#ff0000"
+  		android:isScrollContainer="true"
+  		android:scrollbarTrackHorizontal="@drawable/icon"
+  		android:scrollbarAlwaysDrawHorizontalTrack="true"
+  		android:scrollbarStyle="insideInset"
+  		android:scrollbarSize="5dp" >
+  		<Button
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="123456789" />
+  		<Button
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="123456789" />
+  		<Button
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="123456789" />
+  		<Button
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="123456789" />
+  		<Button
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="123456789" />
+  		<Button
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="123456789" />
+  		<Button
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="123456789" />
+  		<Button
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="123456789" />
+  		<Button
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="123456789" />
+  		<Button
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="123456789" />
+  		<Button
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="123456789" />
+  		<Button
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="123456789" />
+  		<Button
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="123456789" />
+  		<Button
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="123456789" />
+  		<Button
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="123456789" />
+ 
+  	</LinearLayout>
+  	<View
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:scrollbars="vertical" />
+</RelativeLayout>
+<!-- From: file:/D:/projects/AndroidApis/app/src/main/res/layout/horizontial_listview_window.xml -->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="104dp"
+  android:layout_height="104dp" 
+  android:paddingRight="2dp" >
+	<ImageView
+		android:id="@+id/display_top10coupon_img_imageview"
+		android:layout_width="104dp"
+		android:layout_height="104dp"
+		android:scaleType="fitXY"
+		android:background="#00FF00"
+		android:layout_alignParentTop="true" />
+	<TextView
+		android:id="@+id/display_top10coupon_discount_textview"
+		android:layout_width="104dp" 
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@id/display_top10coupon_img_imageview"
+		android:textColor="#FDFDFD"
+		android:text=""
+		android:gravity="center_horizontal"
+		android:singleLine="true" />
+</RelativeLayout>
+<!-- From: file:/D:/projects/AndroidApis/app/src/main/res/layout/display_normal_coupon.xml -->

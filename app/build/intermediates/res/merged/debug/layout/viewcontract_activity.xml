@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <TextView 
+        android:id="@+id/viewcontract_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView 
+        android:id="@+id/viewcontract_tel_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewcontract_name_textview"/>
+</RelativeLayout><!-- From: file:/D:/projects/AndroidApis/app/src/main/res/layout/viewcontract_activity.xml -->
