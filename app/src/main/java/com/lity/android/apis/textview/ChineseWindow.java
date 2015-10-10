@@ -20,7 +20,7 @@ public class ChineseWindow extends Activity {
 //        mTextView.setText("I have a Magento installation with two store versions: Store A and Store B. When you go to 'mydomain.com' I get this error message:Until you click on the link for either Store A or Store B -- " +
 //        		"then it saves the store in a cookie called 'store' and remembers this when you go to 'mydomain.com'. " +
 //                "Is it possible to set 'Store A' as the selected store / homepage by default if no 'store' cookie exists yet?" + 
-        mTextView.setText("è¿™æ˜¯ä¸€ä¸ªä¸­æ–‡çš„15901782875æµ‹è¯•çœ‹çœ‹ä»…ä¸­ï¼Œæ–‡ï¼Œæ’ç‰ˆå‡ºç°ä»€ä¹ˆæ ·ï¼Œçš„é—®é¢˜ã€‚å›çœ‹ä¸€ä¸ªæ—¶é—´2011-09-12è¿‡å»æ—¶æœŸã€‚äº‹å®ä¸Š,.å¯¹å¤„ç†æ˜¯æœ‰æ‰€ä¸åŒ,whereisI,bug,bug,bug.");
+        mTextView.setText("ÕâÊÇÒ»¸öÖĞÎÄµÄ15901782875²âÊÔ¿´¿´½öÖĞ£¬ÎÄ£¬ÅÅ°æ³öÏÖÊ²Ã´Ñù£¬µÄÎÊÌâ¡£»Ø¿´Ò»¸öÊ±¼ä2011-09-12¹ıÈ¥Ê±ÆÚ¡£ÊÂÊµÉÏ,.¶Ô´¦ÀíÊÇÓĞËù²»Í¬,whereisI,bug,bug,bug.");
 //        mTextView.setEllipsize(TruncateAt.END);
 //        mTextView.setSpannableFactory(factory)
         addContentView(mTextView, new LayoutParams(LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT));

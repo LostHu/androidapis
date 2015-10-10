@@ -1,29 +1,29 @@
 package com.lity.android.apis.jni;
 
 /*
- * ç”Ÿæˆsoæ–‡ä»¶è¿‡ç¨‹ï¼š
- * 1. å®‰è£…ndk, å¹¶æŠŠæ ¹ç›®å½•æ·»åŠ åˆ°ç³»ç»Ÿpathä¸­.
- * 2. å®‰è£…äº¤å‰ç¼–è¯‘ç¯å¢ƒcygwin.
+ * Éú³ÉsoÎÄ¼ş¹ı³Ì£º
+ * 1. °²×°ndk, ²¢°Ñ¸ùÄ¿Â¼Ìí¼Óµ½ÏµÍ³pathÖĞ.
+ * 2. °²×°½»²æ±àÒë»·¾³cygwin.
  * 
- * 3. ç¼–å†™javaç±», å£°æ˜nativeæ–¹æ³•.
- * 4. ç¼–è¯‘æ­¤javaæ–‡ä»¶(åŒ…æ‹¬åŒ…å), ç”Ÿæˆclass
- * 5. ä¾æ®ç”Ÿæˆçš„classæ–‡ä»¶, ç”Ÿæˆcå¤´æ–‡ä»¶(javah , ä¸å¸¦æ‰©å±•åclass)
- * 6. ç¼–å†™å®ç°Cä»£ç , å‘½åè¦å’Œç”Ÿæˆçš„cå¤´æ–‡ä»¶ä¿æŒä¸€è‡´
- * 7. ç¼–å†™Android.mkæ–‡ä»¶
+ * 3. ±àĞ´javaÀà, ÉùÃ÷native·½·¨.
+ * 4. ±àÒë´ËjavaÎÄ¼ş(°üÀ¨°üÃû), Éú³Éclass
+ * 5. ÒÀ¾İÉú³ÉµÄclassÎÄ¼ş, Éú³ÉcÍ·ÎÄ¼ş(javah , ²»´øÀ©Õ¹Ãûclass)
+ * 6. ±àĞ´ÊµÏÖC´úÂë, ÃüÃûÒªºÍÉú³ÉµÄcÍ·ÎÄ¼ş±£³ÖÒ»ÖÂ
+ * 7. ±àĞ´Android.mkÎÄ¼ş
  * 
- * 8. æŠŠå¤´æ–‡ä»¶ã€cå®ç°æ–‡ä»¶ã€Android.mkæ–‡ä»¶æ”¾åˆ°jniç›®å½•ä¸‹
- * 9. æ‰“å¼€cygwinå‘½ä»¤è¡Œ, è¿›å…¥åˆ°jniçš„çˆ¶ç›®å½•
- * 10. è¿è¡Œndk-buildå‘½ä»¤, æ— é”™è¯¯ä¼šåœ¨./libs/armeabiçœ‹åˆ°ç”Ÿæˆçš„soæ–‡ä»¶
+ * 8. °ÑÍ·ÎÄ¼ş¡¢cÊµÏÖÎÄ¼ş¡¢Android.mkÎÄ¼ş·Åµ½jniÄ¿Â¼ÏÂ
+ * 9. ´ò¿ªcygwinÃüÁîĞĞ, ½øÈëµ½jniµÄ¸¸Ä¿Â¼
+ * 10. ÔËĞĞndk-buildÃüÁî, ÎŞ´íÎó»áÔÚ./libs/armeabi¿´µ½Éú³ÉµÄsoÎÄ¼ş
  *  
  */
 
 
 /*
- * soæ–‡ä»¶çš„åŠ è½½æ–¹å¼ï¼š(Androidæš‚æ—¶ä¸æ”¯æŒä»sdcardåŠ è½½soæ–‡ä»¶)
- * 1. æ‰“åŒ…åˆ°apkä¸­ï¼šå¤åˆ¶ç”Ÿæˆçš„soæ–‡ä»¶æ”¾åœ¨é¡¹ç›®libs/armeabi/ç›®å½•ä¸‹,
- * 		java class é€šè¿‡ System.loadLibrary("jnitest");åŠ¨æ€åŠ è½½libjnitest.so
- * 2. é€šè¿‡å…¶å®ƒæ–¹å¼æŠŠsoæ–‡ä»¶æ”¾åœ¨åŒ…çš„å®‰è£…(/data/data/com.lity.android.apis/mylib/)ç›®å½•ä¸‹,
- * 		java class é€šè¿‡System.load(/data/data/com.lity.android.apis/mylib/libjnitest.so);åŠ¨æ€åŠ è½½libjnitest.so
+ * soÎÄ¼şµÄ¼ÓÔØ·½Ê½£º(AndroidÔİÊ±²»Ö§³Ö´Ósdcard¼ÓÔØsoÎÄ¼ş)
+ * 1. ´ò°üµ½apkÖĞ£º¸´ÖÆÉú³ÉµÄsoÎÄ¼ş·ÅÔÚÏîÄ¿libs/armeabi/Ä¿Â¼ÏÂ,
+ * 		java class Í¨¹ı System.loadLibrary("jnitest");¶¯Ì¬¼ÓÔØlibjnitest.so
+ * 2. Í¨¹ıÆäËü·½Ê½°ÑsoÎÄ¼ş·ÅÔÚ°üµÄ°²×°(/data/data/com.lity.android.apis/mylib/)Ä¿Â¼ÏÂ,
+ * 		java class Í¨¹ıSystem.load(/data/data/com.lity.android.apis/mylib/libjnitest.so);¶¯Ì¬¼ÓÔØlibjnitest.so
  */
 
 

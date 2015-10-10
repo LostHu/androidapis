@@ -70,9 +70,9 @@ public class DetailWindow extends Activity implements OnTouchListener {
         
         for (int i = 0; i < 10; i++) {
             String str = "<div style='border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#000; background:url(APK>'file:///android_asset/qq.png)'><ul>";
-            str += "<li><input onClick='window.demo.clickOnAndroid(" + i + ", 0)' type='button' value='ç™¾åº¦' /></li>";
+            str += "<li><input onClick='window.demo.clickOnAndroid(" + i + ", 0)' type='button' value='°Ù¶È' /></li>";
             str += "<li><input onClick='window.demo.clickOnAndroid(" + i + ", 1)' type='button' value='google' /></li>";
-            str += "<li><input onClick='window.demo.clickOnAndroid(" + i + ", 2)' type='button' value='æ–°æµª' /></li>";
+            str += "<li><input onClick='window.demo.clickOnAndroid(" + i + ", 2)' type='button' value='ÐÂÀË' /></li>";
             str += "<li><input onClick='window.demo.clickOnAndroid(" + i + ", 3)' type='button' value='yahoo' /></li>";
             str += "</ul></div>";
             result += str;

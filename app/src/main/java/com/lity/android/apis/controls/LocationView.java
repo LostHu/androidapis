@@ -42,7 +42,7 @@ public class LocationView extends LinearLayout  {
     private Drawable mShowDrawable;
     private Drawable mHideDrawable;
     
-    // å¤„ç†å·¦å³æŒ‰é’®çš„ç‚¹å‡»äº‹ä»¶
+    // ´¦Àí×óÓÒ°´Å¥µÄµã»÷ÊÂ¼ş
     private View.OnClickListener mEventHandler = new OnClickListener() {
         
         @Override
@@ -87,7 +87,7 @@ public class LocationView extends LinearLayout  {
     }
 
     private void createSubView() {
-        // TODO ä»jarä¸­è¯»å–å›¾ç‰‡æ–‡ä»¶
+        // TODO ´ÓjarÖĞ¶ÁÈ¡Í¼Æ¬ÎÄ¼ş
 //        try {
 //            InputStream is = getContext().getAssets().open("controls_location_bg.png");
 //            bg = new BitmapDrawable(BitmapFactory.decodeStream(is));

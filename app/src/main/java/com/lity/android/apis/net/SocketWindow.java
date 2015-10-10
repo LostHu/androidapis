@@ -25,7 +25,7 @@ public class SocketWindow extends Activity implements View.OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.send_window);
 		
-		// æ„å»ºæ–‡æœ¬ç¼–è¾‘
+		// ¹¹½¨ÎÄ±¾±à¼­
 		mEditView = (EditText)findViewById(R.id.sendtext_edittext);
 		mButton = (Button) findViewById(R.id.sure_button);
 		mButton.setOnClickListener(this);
@@ -69,7 +69,7 @@ public class SocketWindow extends Activity implements View.OnClickListener {
 			InetAddress inet = InetAddress.getLocalHost();
 			Socket msocket = new Socket("10.0.2.2", port);
 			
-			// å‘æœåŠ¡å™¨å‘é€æ¶ˆæ¯
+			// Ïò·şÎñÆ÷·¢ËÍÏûÏ¢
 			PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(msocket.getOutputStream())), true);
 			out.println(str);
 		} 

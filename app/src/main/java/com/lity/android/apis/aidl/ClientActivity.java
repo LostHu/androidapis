@@ -11,8 +11,8 @@ import android.os.RemoteException;
 import android.util.Log;
 
 /*
- * 1. aidlçš„å®¢æˆ·ç«¯ä½¿ç”¨Intentæ¥è¿åˆ°aidlçš„æœåŠ¡ç«¯æ—¶, è‹¥è®¾å¤‡ä¸Šæœ‰å‡ ä¸ªIntent.actionå®Œå…¨ç›¸åŒçš„Service, 
- * 	  é‚£ä¹ˆcä¼šè¿æ¥åˆ°æœ€å…ˆå®‰è£…sä¸Š.
+ * 1. aidlµÄ¿Í»§¶ËÊ¹ÓÃIntent½ÓÁ¬µ½aidlµÄ·şÎñ¶ËÊ±, ÈôÉè±¸ÉÏÓĞ¼¸¸öIntent.actionÍêÈ«ÏàÍ¬µÄService, 
+ * 	  ÄÇÃ´c»áÁ¬½Óµ½×îÏÈ°²×°sÉÏ.
  */
 public class ClientActivity extends Activity {
 

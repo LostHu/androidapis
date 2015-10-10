@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.util.Log;
 
 /**
- * 骞挎挱,鍦ㄦ墜鏈哄惎鍔ㄥ悗璋冪敤{@link#onRecerive()}鏂规硶鍒涘缓service杩涚▼
+ * 广播,在手机启动后调用{@link#onRecerive()}方法创建service进程
  * @author Lity
  *
  */

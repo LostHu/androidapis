@@ -26,7 +26,7 @@ public class ObjectsFromXmlWindow extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		Log.v("DEBUG", "hello,  \næ–¹æ³•");
+		Log.v("DEBUG", "hello,  \n·½·¨");
 		XmlParser1 parser = new XmlParser1(this);
 		parser.startParse();
 	}
@@ -36,9 +36,9 @@ public class ObjectsFromXmlWindow extends Activity {
 class XmlParser extends Object {
 	
 	/*
-	 * TODO: 1 android å¹³å°ä¸Šå¼€å‘,å¯¹äºæœ¬åœ°çš„èŠ‚ç‚¹æµ(æ–‡ä»¶)ä¸èƒ½åƒæ§åˆ¶å°ç¨‹åºé‚£æ ·(res/xml/test.xml)ä½¿ç”¨,
-	 * 		   ä¹Ÿä¸èƒ½åƒæ‰“åŒ…æˆjaré‚£æ ·(/res/xml/test.xml)ä½¿ç”¨ã€‚åªèƒ½ä»¥android å¹³å°æœ¬èº«æä¾›çš„è®¿é—®æ–¹å¼(getResource().getAssets().open(text.xml)æ¥ä½¿ç”¨,
-	 * 		  å¹¶ä¸”text.xmlæ–‡ä»¶åˆ°æ”¾åœ¨assetsä¸‹é¢.
+	 * TODO: 1 android Æ½Ì¨ÉÏ¿ª·¢,¶ÔÓÚ±¾µØµÄ½ÚµãÁ÷(ÎÄ¼ş)²»ÄÜÏñ¿ØÖÆÌ¨³ÌĞòÄÇÑù(res/xml/test.xml)Ê¹ÓÃ,
+	 * 		   Ò²²»ÄÜÏñ´ò°ü³ÉjarÄÇÑù(/res/xml/test.xml)Ê¹ÓÃ¡£Ö»ÄÜÒÔandroid Æ½Ì¨±¾ÉíÌá¹©µÄ·ÃÎÊ·½Ê½(getResource().getAssets().open(text.xml)À´Ê¹ÓÃ,
+	 * 		  ²¢ÇÒtext.xmlÎÄ¼şµ½·ÅÔÚassetsÏÂÃæ.
 	 * 
 	 */
 	
@@ -95,7 +95,7 @@ class XmlParser extends Object {
 	private DefaultHandler mHandler = new DefaultHandler(){
 		
 		/*
-		 * ä¸è§£æå±æ€§
+		 * ²»½âÎöÊôĞÔ
 		 */
 
 		@Override
@@ -160,9 +160,9 @@ class XmlParser extends Object {
 class XmlParser1 extends Object {
 	
 	/*
-	 * TODO: 1 android å¹³å°ä¸Šå¼€å‘,å¯¹äºæœ¬åœ°çš„èŠ‚ç‚¹æµ(æ–‡ä»¶)ä¸èƒ½åƒæ§åˆ¶å°ç¨‹åºé‚£æ ·(res/xml/test.xml)ä½¿ç”¨,
-	 * 		   ä¹Ÿä¸èƒ½åƒæ‰“åŒ…æˆjaré‚£æ ·(/res/xml/test.xml)ä½¿ç”¨ã€‚åªèƒ½ä»¥android å¹³å°æœ¬èº«æä¾›çš„è®¿é—®æ–¹å¼(getResource().getAssets().open(text.xml)æ¥ä½¿ç”¨,
-	 * 		  å¹¶ä¸”text.xmlæ–‡ä»¶åˆ°æ”¾åœ¨assetsä¸‹é¢.
+	 * TODO: 1 android Æ½Ì¨ÉÏ¿ª·¢,¶ÔÓÚ±¾µØµÄ½ÚµãÁ÷(ÎÄ¼ş)²»ÄÜÏñ¿ØÖÆÌ¨³ÌĞòÄÇÑù(res/xml/test.xml)Ê¹ÓÃ,
+	 * 		   Ò²²»ÄÜÏñ´ò°ü³ÉjarÄÇÑù(/res/xml/test.xml)Ê¹ÓÃ¡£Ö»ÄÜÒÔandroid Æ½Ì¨±¾ÉíÌá¹©µÄ·ÃÎÊ·½Ê½(getResource().getAssets().open(text.xml)À´Ê¹ÓÃ,
+	 * 		  ²¢ÇÒtext.xmlÎÄ¼şµ½·ÅÔÚassetsÏÂÃæ.
 	 * 
 	 */
 	
@@ -216,7 +216,7 @@ class XmlParser1 extends Object {
 	private DefaultHandler mHandler = new DefaultHandler(){
 		
 		/*
-		 * ä¸è§£æå±æ€§
+		 * ²»½âÎöÊôĞÔ
 		 */
 
 		@Override

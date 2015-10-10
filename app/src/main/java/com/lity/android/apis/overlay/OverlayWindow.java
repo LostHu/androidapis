@@ -65,13 +65,13 @@ public class OverlayWindow extends Activity implements OnClickListener {
     }
 
     private void showFakeTitleBar() {
-        // è®©ä¸€ä¸ªè§†å›¾æµ®åŠ¨åœ¨ä½ çš„åº”ç”¨ç¨‹åºä¹‹ä¸Š
+        // ÈÃÒ»¸öÊÓÍ¼¸¡¶¯ÔÚÄãµÄÓ¦ÓÃ³ÌĞòÖ®ÉÏ
 //        View view1 = getWindow().peekDecorView();
 //        
 //        WindowManager windowmanager = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
 //        android.view.WindowManager.LayoutParams layoutparams = new android.view.WindowManager.LayoutParams(
-//                320,// æµ®åŠ¨çš„å¤§å° å®½
-//                20, // æµ®åŠ¨çš„ é«˜
+//                320,// ¸¡¶¯µÄ´óĞ¡ ¿í
+//                20, // ¸¡¶¯µÄ ¸ß
 //                WindowManager.LayoutParams.TYPE_APPLICATION_SUB_PANEL,
 //                WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, -1);
 //        Rect rect = new Rect();

@@ -12,7 +12,7 @@ public class CubeGLRender implements Renderer {
     int  one = 0x10000;
     float rotateTri = 0f;
     float xrot, yrot, zrot;
-    // å››è¾¹å½¢çš„ç‚¹
+    // ËÄ±ßĞÎµÄµã
     private IntBuffer cubePointerBuffer = IntBuffer.wrap(new int[]{
             one, 0, 0,
             one, one, 0,
@@ -114,7 +114,7 @@ public class CubeGLRender implements Renderer {
         
         gl.glTranslatef(0.0f, 0.0f, -3.0f);
         
-        //è®¾ç½®3ä¸ªæ–¹å‘çš„æ—‹è½¬
+        //ÉèÖÃ3¸ö·½ÏòµÄĞı×ª
         gl.glRotatef(xrot, 1.0f, 0.0f, 0.0f);
         gl.glRotatef(yrot, 0.0f, 1.0f, 0.0f);
         gl.glRotatef(zrot, 0.0f, 0.0f, 1.0f);
@@ -154,7 +154,7 @@ public class CubeGLRender implements Renderer {
         gl.glClearColor(0, 0, 0, 0);
         gl.glShadeModel(GL10.GL_SMOOTH);
         
-        // æ·±åº¦
+        // Éî¶È
         gl.glClearDepthf(1.0f);
         gl.glEnable(GL10.GL_DEPTH_TEST);
         gl.glDepthFunc(GL10.GL_LEQUAL);

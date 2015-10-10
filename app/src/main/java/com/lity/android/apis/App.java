@@ -7,12 +7,12 @@ import android.util.Log;
 public class App extends Application {
     
     /**
-     * 鏄惁鎵撳嵃log
+     * 是否打印log
      */
     public static final boolean DEBUG = true;
     
     /**
-     * 鎵撳嵃log鐨則ag
+     * 打印log的tag
      */
     public static final String TAG = App.class.getSimpleName();
 

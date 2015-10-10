@@ -45,7 +45,7 @@ public class Tab2 extends Activity {
 //        mTabHost.getTabWidget().getChildAt(2).setBackgroundColor(Color.GREEN);
 //        mTabHost.getTabWidget().setBackgroundResource(R.drawable.icon);
 
-        // ç¾ŽåŒ–TabHost
+        // ÃÀ»¯TabHost
         mTabWidget = mTabHost.getTabWidget();
         if (Integer.valueOf(Build.VERSION.SDK) <= 7) {
             try {

@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 /**
- * 鏆傛椂涓嶆敮鎸丮atrix鍜孖mageView.CropToPadding
+ * 暂时不支持Matrix和ImageView.CropToPadding
  */
 public class RoundImageView extends ImageView {
 
@@ -34,10 +34,10 @@ public class RoundImageView extends ImageView {
 
 	@Override
 	protected void onDraw(Canvas canvas) {
-		// // 鐢变簬鏃犳硶閬胯繃ImageView.onDraw()鍘昏皟鐢╒iew.onDraw()涓擵iew.onDraw()鏂规硶涓棤鍐呭, 涓嶅啀璋冪敤super.onDraw()
+		// // 由于无法避过ImageView.onDraw()去调用View.onDraw()且View.onDraw()方法中无内容, 不再调用super.onDraw()
 		// super.onDraw(canvas);
 		//
-		// // 浠ヤ笅浠ｇ爜閫昏緫鎽樿嚜Android-14, ImageView.onDraw().
+		// // 以下代码逻辑摘自Android-14, ImageView.onDraw().
 		// Drawable drawable = getDrawable();
 		// if (drawable == null) {
 		// return; // couldn't resolve the URI

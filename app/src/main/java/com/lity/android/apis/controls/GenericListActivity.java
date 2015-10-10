@@ -46,32 +46,32 @@ public class GenericListActivity extends ListActivity {
 		List<Map<String, Object>> listData = new ArrayList<Map<String, Object>>();
 		Map<String, Object> map = new HashMap<String, Object>();
 		
-		map.put("name", "åº·ä¹ƒé¦¨");
-		map.put("symbol", "æ¯äº²æˆ‘çˆ±æ‚¨");
+		map.put("name", "¿µÄËÜ°");
+		map.put("symbol", "Ä¸Ç×ÎÒ°®Äú");
 		map.put("imgId", R.drawable.space_go);
 		listData.add(map);
 		
 		map = new HashMap<String, Object>();
-		map.put("name", "å‘æ—¥è‘µ");
-		map.put("symbol", "çˆ±æ…•ã€å…‰è¾‰ã€å¿ è¯š ");
+		map.put("name", "ÏòÈÕ¿û");
+		map.put("symbol", "°®Ä½¡¢¹â»Ô¡¢ÖÒ³Ï ");
 		map.put("imgId", R.drawable.space_go);
 		listData.add(map);
 	
 		map = new HashMap<String, Object>();
-		map.put("name", "å±±èŒ¶");
-		map.put("symbol", "å¯çˆ±ã€è°¦è®©ã€ç†æƒ³çš„çˆ±ã€äº†ä¸èµ·çš„é­…åŠ›");
+		map.put("name", "É½²è");
+		map.put("symbol", "¿É°®¡¢Ç«ÈÃ¡¢ÀíÏëµÄ°®¡¢ÁË²»ÆğµÄ÷ÈÁ¦");
 		map.put("imgId", R.drawable.space_go);
 		listData.add(map);
 		
 		map = new HashMap<String, Object>();
-		map.put("name", "ç™¾åˆ");
-		map.put("symbol", "é¡ºåˆ©ã€å¿ƒæƒ³äº‹æˆã€ç¥ç¦ã€é«˜è´µ ");
+		map.put("name", "°ÙºÏ");
+		map.put("symbol", "Ë³Àû¡¢ĞÄÏëÊÂ³É¡¢×£¸£¡¢¸ß¹ó ");
 		map.put("imgId", R.drawable.space_go);
 		listData.add(map);
 		
 		map = new HashMap<String, Object>();
-		map.put("name", "éƒé‡‘é¦™");
-		map.put("symbol", "çˆ±çš„è¡¨ç™½ã€è£èª‰ã€ç¥ç¦æ°¸æ’ ");
+		map.put("name", "Óô½ğÏã");
+		map.put("symbol", "°®µÄ±í°×¡¢ÈÙÓş¡¢×£¸£ÓÀºã ");
 		map.put("imgId", R.drawable.space_go);
 		listData.add(map);
 		map.get("name");

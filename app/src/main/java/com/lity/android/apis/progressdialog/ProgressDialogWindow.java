@@ -42,9 +42,9 @@ public class ProgressDialogWindow extends Activity implements OnClickListener, a
         // TODO Auto-generated method stub
         mProgressDialog = new ProgressDialog(this);
         mProgressDialog.setTitle("notice");
-        mProgressDialog.setMessage("ËøõÂ∫¶Êù°");
+        mProgressDialog.setMessage("Ω¯∂»Ãı");
         if (mButton1 == v) {
-            mProgressDialog.setButton("Á°ÆÂÆö", this);
+            mProgressDialog.setButton("»∑∂®", this);
             mProgressDialog.show();
         }
         else if (mButton2 == v) {

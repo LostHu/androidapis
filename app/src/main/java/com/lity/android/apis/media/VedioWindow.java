@@ -45,7 +45,7 @@ public class VedioWindow extends Activity {
         mSurfaceView = (SurfaceView)findViewById(R.id.video_preview_surfaceview);
         mVideoView = (VideoView)findViewById(R.id.video_playview_videoview);
         
-        // å½•åˆ¶çš„æ–‡ä»¶å
+        // Â¼ÖÆµÄÎÄ¼şÃû
         Log.v("DEBUG", "file storage directory: " + Environment.getExternalStorageState());
 //        try {
             mRecodeFile = new File("/sdcard/record/record.mp4");
@@ -59,18 +59,18 @@ public class VedioWindow extends Activity {
         
        
         
-        // åˆå§‹åŒ–recorder
+        // ³õÊ¼»¯recorder
         mRecorder = new MediaRecorder();
         
-        // åˆå§‹åŒ–player
+        // ³õÊ¼»¯player
         mPlayer = new MediaPlayer();
         
-        // è®¾ç½®é¢„è§ˆ,TODO æ”¾åœ¨initRecorderä¸­
+        // ÉèÖÃÔ¤ÀÀ,TODO ·ÅÔÚinitRecorderÖĞ
         mSurfaceView.getHolder().setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
         mRecorder.setPreviewDisplay(mSurfaceView.getHolder().getSurface());
         
 
-        // æ’­æ”¾
+        // ²¥·Å
         mPlayButton.setOnClickListener(new OnClickListener() {
             
             @Override
@@ -82,7 +82,7 @@ public class VedioWindow extends Activity {
             }
         });
         
-        // å½•åˆ¶
+        // Â¼ÖÆ
         mRecorderButton.setOnClickListener(new OnClickListener() {
             
             @Override
@@ -100,7 +100,7 @@ public class VedioWindow extends Activity {
             }
         });
         
-        // åœæ­¢å½•åˆ¶
+        // Í£Ö¹Â¼ÖÆ
         mStopButton.setOnClickListener(new OnClickListener() {
             
             @Override
@@ -119,7 +119,7 @@ public class VedioWindow extends Activity {
     }
     
     /**
-     * åˆå§‹åŒ–Recoder
+     * ³õÊ¼»¯Recoder
      */
     private void initRecorder(){
         mRecorder.setVideoSource(MediaRecorder.VideoSource.CAMERA);

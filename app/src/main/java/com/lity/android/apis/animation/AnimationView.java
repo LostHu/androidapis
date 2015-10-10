@@ -51,7 +51,7 @@ public class AnimationView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
 //        long time = System.currentTimeMillis();
-//        Log.v("DEBUG", "ä¸¤æ¬¡ç»˜å›¾çš„æ—¶é—´é—´éš”:" + (time - mLastTime));
+//        Log.v("DEBUG", "Á½´Î»æÍ¼µÄÊ±¼ä¼ä¸ô:" + (time - mLastTime));
 //        mLastTime = time;
         Matrix matrix = new Matrix();
         canvas.getMatrix(matrix);

@@ -22,7 +22,7 @@ public class SmsReceive extends BroadcastReceiver {
 			smsMessage[i] = SmsMessage.createFromPdu((byte []) messages[i]);
 		}
 		
-		Toast mToast = Toast.makeText(arg0, "çŸ­ä¿¡å†…å®¹ï¼š" + smsMessage[0].getMessageBody(), Toast.LENGTH_LONG);
+		Toast mToast = Toast.makeText(arg0, "¶ÌĞÅÄÚÈİ£º" + smsMessage[0].getMessageBody(), Toast.LENGTH_LONG);
 		System.out.println("SmsReceive onRecerve Method");
 //		abortBroadcast();
 		mToast.show();

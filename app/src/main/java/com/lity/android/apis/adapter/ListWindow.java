@@ -149,28 +149,28 @@ public class ListWindow extends ListActivity {
          * @param res resId
          */
         public void setItemXml(int res) {
-            // TODO å¤„ç†resä¸å­˜åœ¨
+            // TODO ´¦Àíres²»´æÔÚ
             mItemXmlLayout = res;
         }
         
         /**
-         * è®¾ç½®ItemClass
+         * ÉèÖÃItemClass
          * @param itemClass
          */
         public void setItemClass(Class<? extends Object> itemClass) {
-            // TODO å¦‚æœDataSourceä¸ä¸ºç©º,è¿›è¡Œåˆ¤æ–­
+            // TODO Èç¹ûDataSource²»Îª¿Õ,½øĞĞÅĞ¶Ï
             mItemDataClass = itemClass;
         }
         
         /**
-         * è¿æ¥æ•°æ®æº
-         * @param obj åº”è¯¥ä¸º{@link#setItemClass()}ç±»å‹çš„æ•°ç»„æˆ–List
+         * Á¬½ÓÊı¾İÔ´
+         * @param obj Ó¦¸ÃÎª{@link#setItemClass()}ÀàĞÍµÄÊı×é»òList
          */
         public void setDataSource(Object obj) {
             if (!(obj instanceof Array || obj instanceof List<?>)) {
-                //TODO æš‚æ—¶ä¸æ”¯æŒå…¶å®ƒæ•°æ®æºç±»å‹
+                //TODO ÔİÊ±²»Ö§³ÖÆäËüÊı¾İÔ´ÀàĞÍ
             }
-            // TODO å¦‚æœItemClassä¸ä¸ºç©º,å†è¿›è¡Œåˆ¤æ–­
+            // TODO Èç¹ûItemClass²»Îª¿Õ,ÔÙ½øĞĞÅĞ¶Ï
             mDataSource = obj;
             if (mDataSource.getClass().isArray()) {
                 mDataArray = (Object[])mDataSource;
@@ -220,7 +220,7 @@ public class ListWindow extends ListActivity {
                 throw new IllegalArgumentException();
             }
             
-            // æ‰¾åˆ°å‚æ•°å‡½æ•°åŠå…¶è¿”å›å€¼
+            // ÕÒµ½²ÎÊıº¯Êı¼°Æä·µ»ØÖµ
             final int count = (rule.length - two) / 2;
 //            Method[] argMethods = new Method[count];
             Class[] parameterTypes = new Class[count];

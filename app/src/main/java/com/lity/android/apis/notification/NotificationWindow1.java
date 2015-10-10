@@ -32,7 +32,7 @@ public class NotificationWindow1 extends Activity implements OnClickListener {
     @Override
     public void onClick(View v) {
         
-        // TODO 鐗规畩涔嬬敤
+        // TODO 特殊之用
         ActivityManager amActivityManager = (ActivityManager)getSystemService(Service.ACTIVITY_SERVICE);
         List<ActivityManager.RunningServiceInfo> runningServiceInfos = amActivityManager.getRunningServices(100);
         for (ActivityManager.RunningServiceInfo runningServiceInfo : runningServiceInfos) {
@@ -42,7 +42,7 @@ public class NotificationWindow1 extends Activity implements OnClickListener {
             Log.v("bug", runningServiceInfo.service.getClassName());
         }
         
-        // 鍙戝嚭涓�涓�氱煡
+        // 发出一个通知
         NotificationManager notifyManager = (NotificationManager)NotificationWindow1.this.getSystemService(Service.NOTIFICATION_SERVICE);
 
         Intent intent = new Intent().setClass(this, NotificationWindow2.class);
@@ -50,9 +50,9 @@ public class NotificationWindow1 extends Activity implements OnClickListener {
     
         Notification notify = new Notification();
         notify.icon = R.drawable.icon;
-        notify.tickerText = "Button1 閫氱煡鍐呭";
+        notify.tickerText = "Button1 通知内容";
         notify.defaults = Notification.DEFAULT_SOUND;
-        notify.setLatestEventInfo(this, "button1", "button 閫氱煡", pendingIntent);
+        notify.setLatestEventInfo(this, "button1", "button 通知", pendingIntent);
 
         notifyManager.notify(1, notify);
     }

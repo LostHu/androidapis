@@ -32,10 +32,10 @@ public class RadioGroupWindow extends Activity {
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
 				// TODO Auto-generated method stub
 				if (rightId == checkedId) {
-					Toast.makeText(RadioGroupWindow.this, "鍥炵瓟姝ｇ‘", Toast.LENGTH_LONG);
+					Toast.makeText(RadioGroupWindow.this, "回答正确", Toast.LENGTH_LONG);
 				}
 				else {
-					Toast.makeText(RadioGroupWindow.this, "鍥炵瓟閿欒", Toast.LENGTH_LONG);
+					Toast.makeText(RadioGroupWindow.this, "回答错误", Toast.LENGTH_LONG);
 				}
 			}
 		});

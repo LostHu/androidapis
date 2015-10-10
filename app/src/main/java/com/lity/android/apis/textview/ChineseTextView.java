@@ -40,10 +40,10 @@ public class ChineseTextView extends TextView {
         }
         FontMetrics fmFontMetrics = paint.getFontMetrics();
         
-//        // 鍘熺偣
+//        // 原点
 //        int originX = 150, originY = (getBottom() - getTop()) / 2;
 //        
-//        // 鐢诲潗鏍囩郴
+//        // 画坐标系
 //        Path path = new Path();
 //        path.moveTo(10, (getBottom() - getTop()) / 2);
 //        path.lineTo(300, (getBottom() - getTop()) / 2);
@@ -55,7 +55,7 @@ public class ChineseTextView extends TextView {
 //        path.moveTo(150, 10);
 //        path.lineTo(150, 445);
 //        
-//        // 鐢诲渾
+//        // 画圆
 ////        path.addCircle(originX, originY, 100, Direction.CW);
 //        
 //        final int width = 200, height = 100;

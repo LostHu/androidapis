@@ -42,16 +42,16 @@ import com.lity.android.apis.R;
 
 public class ContactManagerWindow extends Activity {
 
-	/** èœå•Id,æ ¹æ®åå­—åˆ é™¤è”ç³»äºº **/
+	/** ²Ëµ¥Id,¸ù¾İÃû×ÖÉ¾³ıÁªÏµÈË **/
 	private final static int MENU_ID_DELETE_BY_NAME = Menu.FIRST + 0;
 	
-	/** èœå•Id,æ ¹æ®ç”µè¯å·ç åˆ é™¤è”ç³»äºº **/
+	/** ²Ëµ¥Id,¸ù¾İµç»°ºÅÂëÉ¾³ıÁªÏµÈË **/
 	private final static int MENU_ID_DELETE_BY_MOBILE = Menu.FIRST + 1;
 	
-	/** å¯¹è¯æ¡†Id,è¾“å…¥åå­—åˆ é™¤è”ç³»äºº **/
+	/** ¶Ô»°¿òId,ÊäÈëÃû×ÖÉ¾³ıÁªÏµÈË **/
 	private final static int DIALOG_ID_INPUTNAME_TO_DELETE = 1000 + 1;
 	
-	/** å¯¹è¯æ¡†Id,è¾“å…¥mobileå·ç åˆ é™¤è”ç³»äºº **/
+	/** ¶Ô»°¿òId,ÊäÈëmobileºÅÂëÉ¾³ıÁªÏµÈË **/
 	private final static int DIALOG_ID_INPUTMOBILE_TO_DELETE = 1000 + 2;
 	
 	
@@ -60,7 +60,7 @@ public class ContactManagerWindow extends Activity {
 //	private final static int MENU_ID_DELETE_BY_NAME = Menu.FIRST + 2;
 	
 	
-	/** èœå•çš„id **/
+	/** ²Ëµ¥µÄid **/
     private final int[] mOptionId = new int[]{MENU_ID_DELETE_BY_NAME, MENU_ID_DELETE_BY_MOBILE};
     private final String[] mOptionTitle = new String[]{"delete by Name", "delete by mobile"};
     
@@ -75,7 +75,7 @@ public class ContactManagerWindow extends Activity {
         ListView listView = (ListView)findViewById(R.id.contactmanager_listview);
         
         TextView text = new TextView(this);
-        text.setText("è¯·ç‚¹å‡»èœå•é”®!");
+        text.setText("Çëµã»÷²Ëµ¥¼ü!");
         
         ContactAdapter adapter = new ContactAdapter();
         listView.setAdapter(adapter);
@@ -85,7 +85,7 @@ public class ContactManagerWindow extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         boolean result = super.onCreateOptionsMenu(menu);
-        // åˆ›å»ºèœå•,å¹¶æŠŠå·²å®šä¹‰å¥½çš„èœå•å…¨åŠ è¿›å»
+        // ´´½¨²Ëµ¥,²¢°ÑÒÑ¶¨ÒåºÃµÄ²Ëµ¥È«¼Ó½øÈ¥
         for (int i = 0; i < mOptionId.length; i++) {
             menu.add(0, mOptionId[i], i, mOptionTitle[i]);
         }
@@ -98,10 +98,10 @@ public class ContactManagerWindow extends Activity {
     	switch (id) {
 		case DIALOG_ID_INPUTNAME_TO_DELETE:
 			AlertDialog.Builder builder = new Builder(this);
-			builder.setTitle("è¯·è¾“å…¥è¦åˆ é™¤è”ç³»äººçš„åå­—:");
+			builder.setTitle("ÇëÊäÈëÒªÉ¾³ıÁªÏµÈËµÄÃû×Ö:");
 			final EditText inputEditText = new EditText(this);
 			builder.setView(inputEditText);
-			builder.setPositiveButton("ç¡®å®š", new OnClickListener() {
+			builder.setPositiveButton("È·¶¨", new OnClickListener() {
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
 					delContact(ContactManagerWindow.this, inputEditText.getText().toString());
@@ -109,11 +109,11 @@ public class ContactManagerWindow extends Activity {
 			        ((BaseAdapter)((ListView)findViewById(R.id.contactmanager_listview)).getAdapter()).notifyDataSetChanged();
 				}
 			});
-			builder.setNegativeButton("å–æ¶ˆ", null);
+			builder.setNegativeButton("È¡Ïû", null);
 			dialog = builder.create();
 			break;
 		default:
-			// é»˜è®¤è®©çˆ¶ç±»å¤„ç†
+			// Ä¬ÈÏÈÃ¸¸Àà´¦Àí
 			dialog = super.onCreateDialog(id);
 			break;
 		}
@@ -143,7 +143,7 @@ public class ContactManagerWindow extends Activity {
         if (null == mCacheData) {
 			mCacheData = new ArrayList<Map<String,String>>();
 		}
-        // æ‰“å°å‡ºæ¥æ‰€æœ‰åˆ—
+        // ´òÓ¡³öÀ´ËùÓĞÁĞ
         mCursor.moveToNext();
         Map<String, String> columns = new HashMap<String, String>();
         for (int i = 0; i < mCursor.getColumnCount(); i++) {
@@ -158,9 +158,9 @@ public class ContactManagerWindow extends Activity {
 			itemMap.put(ContactsContract.Contacts._ID, mCursor.getString(mCursor.getColumnIndex(ContactsContract.Contacts._ID)));
 			// contract name
 			itemMap.put(ContactsContract.Contacts.DISPLAY_NAME, mCursor.getString(mCursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME)));
-			// æ˜¯å¦æœ‰ç”µè¯å·ç 
+			// ÊÇ·ñÓĞµç»°ºÅÂë
 			itemMap.put(ContactsContract.Contacts.HAS_PHONE_NUMBER, mCursor.getString(mCursor.getColumnIndex(ContactsContract.Contacts.HAS_PHONE_NUMBER)));
-			// ç”µè¯å·ç 
+			// µç»°ºÅÂë
 //			itemMap.put(ContactsContract.Contacts., mCursor.getString(mCursor.getColumnIndex(ContactsContract.PhoneLookup.NUMBER)));
 			
 	        Log.v(App.TAG, "itemMap:" + itemMap);
@@ -204,7 +204,7 @@ public class ContactManagerWindow extends Activity {
     }
     
     /**
-     * åˆ é™¤å†—ä½™çš„è®°å½•
+     * É¾³ıÈßÓàµÄ¼ÇÂ¼
      * @return
      */
     private int deleteRepeatContacts() {

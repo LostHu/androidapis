@@ -11,21 +11,21 @@ public class GLRender extends Object implements Renderer {
     int  one = 0x10000;
     float rotateTri = 0f;
     
-    // ä¸‰è§’å½¢çš„ç‚¹
+    // Èı½ÇĞÎµÄµã
     private IntBuffer triggerBuffer = IntBuffer.wrap(new int[]{
             0, one, 0,
             -one, -one, 0,
             one, -one, 0
     });
     
-    // ä¸‰è§’å½¢å„ä¸ªç‚¹çš„é¢œè‰²
+    // Èı½ÇĞÎ¸÷¸öµãµÄÑÕÉ«
     private IntBuffer colorTriggerBuffer = IntBuffer.wrap(new int[]{
             one, 0, 0, one,
             0, one, 0, one,
             0, 0, one, one,
     });
     
-    // å››è¾¹å½¢çš„ç‚¹
+    // ËÄ±ßĞÎµÄµã
     private IntBuffer quaterBuffer = IntBuffer.wrap(new int[]{
             one, one, 0,
             -one, one, 0,
@@ -75,7 +75,7 @@ public class GLRender extends Object implements Renderer {
         gl.glClearColor(0, 0, 0, 0);
         gl.glShadeModel(GL10.GL_SMOOTH);
         
-        // æ·±åº¦
+        // Éî¶È
         gl.glClearDepthf(1.0f);
         gl.glEnable(GL10.GL_DEPTH_TEST);
         gl.glDepthFunc(GL10.GL_LEQUAL);

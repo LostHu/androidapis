@@ -11,7 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 /**
- * è¯»å–å½©ä¿¡
+ * ¶ÁÈ¡²ÊĞÅ
  * @author litl
  *
  */

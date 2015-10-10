@@ -12,7 +12,7 @@ public class NotificationWindow2 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        // 去掉通知
+        // ȥ��֪ͨ
         NotificationManager notify = (NotificationManager)getSystemService(ServerService.NOTIFICATION_SERVICE);
         notify.cancel(1);
     }

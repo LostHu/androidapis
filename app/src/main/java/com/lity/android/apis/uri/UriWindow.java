@@ -18,7 +18,7 @@ public class UriWindow extends Activity implements OnClickListener {
 		super.onCreate(arg0);
 		setContentView(R.layout.uri_window);
 		
-		// http:// é“¾æŽ¥
+		// http:// Á´½Ó
 		View view = findViewById(R.id.uri_httplink_1);
 		view.setOnClickListener(this);
 		
@@ -32,7 +32,7 @@ public class UriWindow extends Activity implements OnClickListener {
 		view.setOnClickListener(this);
 		
 		
-		// market é“¾æŽ¥
+		// market Á´½Ó
 		Button btn = (Button)findViewById(R.id.uri_marketlink_1);
 		btn.setOnClickListener(this);
 		
@@ -44,30 +44,16 @@ public class UriWindow extends Activity implements OnClickListener {
 		
 		btn = (Button)findViewById(R.id.uri_marketlink_4);
 		btn.setOnClickListener(this);
-
-		view = findViewById(R.id.uri_marketlink_serializable);
-		view.setOnClickListener(this);
+		
 	}
 
 	@Override
 	public void onClick(View v) {
-		if (R.id.uri_marketlink_serializable == v.getId()) {
-			Intent intent = new Intent();
-			intent.setAction("cn.jpush.android.ui.PushActivity");
-			intent.addCategory("android.intent.category.DEFAULT");
-			Custom cus = new Custom();
-			cus.aaa = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-			cus.bbb = 100000;
-			intent.putExtra("aaaa", cus);
-			intent.putExtra("bbbb", "bbbb");
-			startActivity(intent);
-		} else {
-			Button btn = (Button)v;
-			Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(btn.getText().toString()));
+		Button btn = (Button)v;
+		Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(btn.getText().toString()));
 //		intent.setAction(Intent.action_NDEF_DISCOVERED);
-			intent.addCategory(Intent.CATEGORY_BROWSABLE);
-			intent.addCategory(Intent.CATEGORY_DEFAULT);
-			startActivity(intent);
-		}
+		intent.addCategory(Intent.CATEGORY_BROWSABLE);
+		intent.addCategory(Intent.CATEGORY_DEFAULT);
+		startActivity(intent);
 	}
 }

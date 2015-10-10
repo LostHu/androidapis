@@ -37,7 +37,7 @@ public class ViewContractActivity extends Activity {
 		
 		final long rowId = getIntent().getLongExtra(CONTRACT_ROW_ID, Long.MIN_VALUE);
 		if (Long.MIN_VALUE == rowId) {
-			Log.v("DEBUG", "å‚æ•°é”™è¯¯");
+			Log.v("DEBUG", "²ÎÊı´íÎó");
 		}else {
 	        ContentResolver cr = getContentResolver();
 //	        Uri uri = ContentUris.withAppendedId(ContactsContract.RawContacts.CONTENT_URI, rowId);

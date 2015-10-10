@@ -26,7 +26,7 @@ public class BluetoothWindow extends Activity {
 	private Button recordButton;
 	private Button anotherButton;
 
-	// 录锟斤拷
+	// ¼��
 	private MediaRecorder mMediaRecorder;
 	private boolean mIsRecording;
 
@@ -43,7 +43,7 @@ public class BluetoothWindow extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 
-				// 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
+				// ������������
 				BluetoothAdapter _blueAdapter = BluetoothAdapter.getDefaultAdapter();
 				_blueAdapter.enable();
 			}
@@ -56,7 +56,7 @@ public class BluetoothWindow extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 
-				// 锟斤拷锟斤拷wifi锟斤拷锟斤拷
+				// ����wifi����
 				WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
 				wifiManager.setWifiEnabled(true);
 			}
@@ -69,7 +69,7 @@ public class BluetoothWindow extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 
-				// 锟斤拷锟斤拷GPS锟斤拷锟斤拷
+				// ����GPS����
 				LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 				if (!locationManager
 						.isProviderEnabled(android.location.LocationManager.GPS_PROVIDER)) {
@@ -96,7 +96,7 @@ public class BluetoothWindow extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 
-				// 录锟狡猴拷停录锟斤拷锟斤拷
+				// ¼�ƺ�ͣ¼����
 				if (!mIsRecording) {
 					mMediaRecorder = new MediaRecorder();
 					mMediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
@@ -130,8 +130,8 @@ public class BluetoothWindow extends Activity {
 				// Intent intent = new Intent();
 				// intent.setComponent(new ComponentName("com.example.android.apis", "text.Link"));
 				// // intent.setc
-				// //pkgName 应锟矫筹拷锟斤拷陌锟斤拷锟�
-				// //activityName 应锟矫筹拷锟斤拷锟叫碉拷activity锟斤拷锟斤拷
+				// //pkgName Ӧ�ó���İ���
+				// //activityName Ӧ�ó����е�activity����
 				// startActivity(intent);
 				PackageManager pManager = getPackageManager();
 				Intent intent = pManager.getLaunchIntentForPackage("com.example.android.apis");

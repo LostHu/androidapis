@@ -6,7 +6,7 @@ import android.net.wifi.WifiManager;
 import android.os.Bundle;
 
 /*
- * è·å–wifiæµé‡,ä»…2.2ä»¥ä¸Šå¯ç”¨
+ * »ñÈ¡wifiÁ÷Á¿,½ö2.2ÒÔÉÏ¿ÉÓÃ
  */
 public class WifiTestActivity extends Activity {
 	static final String TAG = WifiTestActivity.class.getSimpleName();
@@ -16,11 +16,11 @@ public class WifiTestActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		WifiManager wm;
 		
-		// TODO ä½¿ç”¨è¿™ä¸ªç±»æ¥è·å–æµé‡ä¿¡æ¯
+		// TODO Ê¹ÓÃÕâ¸öÀàÀ´»ñÈ¡Á÷Á¿ĞÅÏ¢
 //		android.net.TrafficStats;
 		
-		// (é€šçŸ¥è®°å½•)ç›‘å¬è”ç³»äººçš„uri: ContactsContract.Contacts.CONTENT_URI, false
-		// ç›‘å¬çŸ­ä¿¡çš„uri:content://sms/, false(å½©ä¿¡ä¹Ÿæ˜¯è¿™ä¸ª)
+		// (Í¨Öª¼ÇÂ¼)¼àÌıÁªÏµÈËµÄuri: ContactsContract.Contacts.CONTENT_URI, false
+		// ¼àÌı¶ÌĞÅµÄuri:content://sms/, false(²ÊĞÅÒ²ÊÇÕâ¸ö)
 		
 //		getContentResolver().registerContentObserver(ContactsContract.Contacts.CONTENT_URI, 
 //				false, new ContactContentObserver(new Handler(getMainLooper())));
@@ -31,10 +31,10 @@ public class WifiTestActivity extends Activity {
 //			public void onCallStateChanged(int state, String incomingNumber) {
 //				super.onCallStateChanged(state, incomingNumber);
 //                switch (state) {
-//                // åˆ¤æ–­æ˜¯å¦æœ‰ç”µè¯æ¥å…¥  
+//                // ÅĞ¶ÏÊÇ·ñÓĞµç»°½ÓÈë  
 //                case TelephonyManager.CALL_STATE_RINGING:
 //                	try {
-//                		// å½“ç”µè¯æ¥å…¥æ—¶ï¼Œè‡ªåŠ¨æŒ‚æ–­ã€‚
+//                		// µ±µç»°½ÓÈëÊ±£¬×Ô¶¯¹Ò¶Ï¡£
 //						 Log.v("DEBUG", "will abort call");
 //				         IBinder binder = ServiceManager.getService(Service.TELEPHONY_SERVICE);
 //						 ITelephony telephony2 = ITelephony.Stub.asInterface(binder);

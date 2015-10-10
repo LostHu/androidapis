@@ -46,22 +46,22 @@ public class CameraWindow extends Activity {
     private SeekBar mSwitchSeekBar;
     
     /**
-     *  æ­£å¸¸çŠ¶æ€
+     *  Õı³£×´Ì¬
      */
     final int CAMERA_STATE_NORMAL = 0;
     
     /**
-     * æ­£åœ¨é¢„è§ˆ
+     * ÕıÔÚÔ¤ÀÀ
      */
     final int CAMERA_STATE_PREVIEWING = 1;
     
     /**
-     * æ­£åœ¨æ‹ç…§
+     * ÕıÔÚÅÄÕÕ
      */
     final int CAMERA_STATE_TAKINGEPICTUTE = 2;
     
     /**
-     * æ­£åœ¨å½•åƒ
+     * ÕıÔÚÂ¼Ïñ
      */
     final int CAMERA_STATE_RECORDINGVIDEO = 3;
     
@@ -75,7 +75,7 @@ public class CameraWindow extends Activity {
     
     
     /**
-     * æ‘„åƒæœºçš„çŠ¶æ€
+     * ÉãÏñ»úµÄ×´Ì¬
      */
     private int mState = CAMERA_STATE_NORMAL;
     
@@ -106,7 +106,7 @@ public class CameraWindow extends Activity {
         
 
         
-        // åˆ‡æ¢åˆ°æ‹ç…§æ¨¡å¼
+        // ÇĞ»»µ½ÅÄÕÕÄ£Ê½
 //        switchPattern(PATTERN_TAKEPICTURE);
 
         holder.addCallback(new HolderCallBack());
@@ -175,7 +175,7 @@ public class CameraWindow extends Activity {
 
 
     /**
-     * æ‹ç…§æ—¶çš„å›è°ƒæ–¹æ³•
+     * ÅÄÕÕÊ±µÄ»Øµ÷·½·¨
      * @author Lity
      *
      */
@@ -225,7 +225,7 @@ public class CameraWindow extends Activity {
     }
 
     /**
-     * å½•åƒæ—¶çš„å›è°ƒæ–¹æ³•
+     * Â¼ÏñÊ±µÄ»Øµ÷·½·¨
      * @author Lity
      *
      */
@@ -258,7 +258,7 @@ public class CameraWindow extends Activity {
     }
  
     /**
-     * holderçš„å›è°ƒæ–¹æ³•
+     * holderµÄ»Øµ÷·½·¨
      * @author Lity
      *
      */
@@ -276,7 +276,7 @@ public class CameraWindow extends Activity {
         @Override
         public void surfaceChanged(SurfaceHolder holder, int format, int width,
                 int height) {
-            // åˆå§‹åŒ–cameraå’Œmediarecorder
+            // ³õÊ¼»¯cameraºÍmediarecorder
             if (holder.isCreating()) {
                 try {
                     mCamera.setPreviewDisplay(holder);
@@ -310,7 +310,7 @@ public class CameraWindow extends Activity {
     }
     
     /**
-     * åˆå§‹åŒ–camera
+     * ³õÊ¼»¯camera
      */
     private void initCamera(){
 
@@ -318,7 +318,7 @@ public class CameraWindow extends Activity {
     }
     
     /**
-     * å¼€å§‹é¢„è§ˆ
+     * ¿ªÊ¼Ô¤ÀÀ
      */
     private void startPreview(){
         mCamera = Camera.open();
@@ -341,15 +341,15 @@ public class CameraWindow extends Activity {
     }
     
     /**
-     * åˆå§‹åŒ–Recoder
-     * @param toRecord trueæ—¶å½•åˆ¶,falseæ—¶é¢„è§ˆ
+     * ³õÊ¼»¯Recoder
+     * @param toRecord trueÊ±Â¼ÖÆ,falseÊ±Ô¤ÀÀ
      */
     private void initRecorder(boolean toRecord){
 //        mMediaRecorder = new MediaRecorder();
 //        
 //        mMediaRecorder.setCamera(mCamera);
 //        
-//        // NOTICE è¿™äº›è®¾ç½®å¿…é¡»åœ¨setCamera()åé¢
+//        // NOTICE ÕâĞ©ÉèÖÃ±ØĞëÔÚsetCamera()ºóÃæ
 //        mMediaRecorder.setVideoSource(MediaRecorder.VideoSource.CAMERA);
 //        mMediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
 //        mMediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
@@ -373,8 +373,8 @@ public class CameraWindow extends Activity {
     }
     
     /**
-     * åˆ‡æ¢æ¨¡å¼
-     * @param pattern æ¨¡å¼Id
+     * ÇĞ»»Ä£Ê½
+     * @param pattern Ä£Ê½Id
      */
     private void switchPattern(int pattern){
 //        if (mPattern != pattern) {

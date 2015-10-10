@@ -15,33 +15,33 @@ import com.lity.android.apis.notification.NotificationWindow2;
 public class ServerService extends Service {
 
     /**
-     * é€šçŸ¥çš„ID
+     * Í¨ÖªµÄID
      */
     private final int NOTIFICATION_ID = 0x1;
     
     /**
-     * é€šçŸ¥ç®¡ç†å™¨çš„å¼•ç”¨
+     * Í¨Öª¹ÜÀíÆ÷µÄÒıÓÃ
      */
     private NotificationManager mNotificationManager;
     
     /**
-     * ä¸€ä¸ªé€šçŸ¥
+     * Ò»¸öÍ¨Öª
      */
     private Notification notify;
     
     /**
-     * åå°è¿è¡Œçš„çº¿ç¨‹
+     * ºóÌ¨ÔËĞĞµÄÏß³Ì
      */
     private ServiceThread mThread;
     
     /**
-     * ç‚¹å‡»é€šçŸ¥è·³è½¬çš„intent
+     * µã»÷Í¨ÖªÌø×ªµÄintent
      */
     private PendingIntent pendingIntent;
     
     
     /**
-     * æ ‡è¯†æ˜¯å¦ä¸­æ–­çº¿ç¨‹æ‰§è¡Œ
+     * ±êÊ¶ÊÇ·ñÖĞ¶ÏÏß³ÌÖ´ĞĞ
      */
     private boolean mIsStop = false;
     @Override

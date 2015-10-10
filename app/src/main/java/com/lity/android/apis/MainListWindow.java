@@ -30,12 +30,12 @@ public class MainListWindow extends ListActivity {
     public final String TAG = "DEBUG";
 
     /**
-     * intentä¸­çš„å‚æ•°å
+     * intentÖĞµÄ²ÎÊıÃû
      */
     private final String PARAM_PREFIX = "PREFIX";
     
     /**
-     * æ ‡è¯†category
+     * ±êÊ¶category
      */
     public final String INTENT_CATEGORY = "CATEGORY_LITY_SAMPLE";
 
@@ -53,7 +53,7 @@ public class MainListWindow extends ListActivity {
             setTitle(prefix);
         }
         
-        setListAdapter(new SimpleAdapter(this, (List) getData(prefix),
+        setListAdapter(new SimpleAdapter(this, (List<? extends Map<String, ?>>) getData(prefix),
                 android.R.layout.simple_list_item_1, new String[] { "title" },
                 new int[] { android.R.id.text1 }));
         
