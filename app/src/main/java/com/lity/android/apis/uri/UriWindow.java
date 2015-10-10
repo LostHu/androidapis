@@ -53,7 +53,7 @@ public class UriWindow extends Activity implements OnClickListener {
 	public void onClick(View v) {
 		if (R.id.uri_marketlink_serializable == v.getId()) {
 			Intent intent = new Intent();
-			intent.setAction(Intent.ACTION_MAIN);
+			intent.setAction("cn.jpush.android.ui.PushActivity");
 			intent.addCategory("android.intent.category.DEFAULT");
 			Custom cus = new Custom();
 			cus.aaa = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
