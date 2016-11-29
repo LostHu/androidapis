@@ -10,7 +10,7 @@ schemes:
 produces:
   - application/json
 paths:
-  /getCode:
+  /login/getCode:
     get:
       description: 获取登录手机验证码
       operationId: getCode
@@ -20,7 +20,7 @@ paths:
         - text/xml
         - text/html
       parameters:
-        - name: userName
+        - name: phone
           in: query
           description: 电话号码
           required: true
@@ -28,7 +28,7 @@ paths:
         - name: type
           in: query
           description: 类型
-          required: true
+          required: false
           type: integer
       responses:
         '200':
