@@ -16,9 +16,6 @@ paths:
       operationId: getCode
       produces:
         - application/json
-        - application/xml
-        - text/xml
-        - text/html
       parameters:
         - name: phone
           in: query
@@ -60,48 +57,32 @@ paths:
           description: unexpected error
           schema:
             $ref: '#/definitions/errorModel'
-  /pets/{id}:
+  /user/login:
     get:
-      description: Returns a user based on a single ID, if the user does not have access to the pet
-      operationId: findPetById
+      description: 登录
+      operationId: login
       produces:
         - application/json
-        - application/xml
-        - text/xml
-        - text/html
       parameters:
-        - name: id
-          in: path
-          description: ID of pet to fetch
+        - name: phone
+          in: query
+          description: 电话号码
           required: true
-          type: integer
-          format: int64
+          type: string
+        - name: code
+          in: query
+          description: 验证码
+          required: true
+          type: string
       responses:
         '200':
-          description: pet response
+          description: 正常返回
           schema:
-            $ref: '#/definitions/pet'
+            $ref: '#/definitions/responsedata'
         default:
-          description: unexpected error
+          description: 错误
           schema:
-            $ref: '#/definitions/errorModel'
-    delete:
-      description: deletes a single pet based on the ID supplied
-      operationId: deletePet
-      parameters:
-        - name: id
-          in: path
-          description: ID of pet to delete
-          required: true
-          type: integer
-          format: int64
-      responses:
-        '204':
-          description: pet deleted
-        default:
-          description: unexpected error
-          schema:
-            $ref: '#/definitions/errorModel'
+            $ref: '#/definitions/responsedata'
 definitions:
   responsedata:
     type: object
@@ -115,7 +96,7 @@ definitions:
       msg:
         type: string
       data:
-        type: string
+        type: object
   pet:
     type: object
     required:
@@ -152,3 +133,5 @@ definitions:
         format: int32
       message:
         type: string
+
+
