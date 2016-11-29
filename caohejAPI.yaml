@@ -20,7 +20,7 @@ paths:
         - text/xml
         - text/html
       parameters:
-        - name: phone
+        - name: userName
           in: query
           description: 电话号码
           required: true
